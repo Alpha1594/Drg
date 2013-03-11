@@ -1,0 +1,17 @@
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.Calculators.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.StartScreen.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.PatientData.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.Properties.Resources.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.Regime.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.SPCviewer.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.ValueSelector.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Release\Regime.exe
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Release\Regime.pdb
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\Regime.exe
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\Regime.pdb
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.AdminDays.resources

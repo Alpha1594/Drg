@@ -1,0 +1,56 @@
+Check implicit, operator keywords
+TODO
+Filter patients by regime
+
+?Change DoseSchedule datatype (Currently Int should be Str)
+
+//Create xml file of regimes
+	Link it to patient form (Read from ability)
+		Use to populate relevant data (Given a regime it can fill in default info)
+			Highlight autopopulated fields to ensure they are checked
+
+Create single set of file read/write functions (to work with Patient & regime data) in a class file (Makes it polymorphic, reduces code )
+xml file for list of consultants (For the consultant drop-down Consultants.xml ::= <Consultant Code><Full Name> //Code show in list with Name as alt text)
+
+Diagnosis and drugs data entry front end (List of drugs and illnesses, tickbox to avoid misspellings, suggest other drugs, avoid allergies/interactions)
+
+Improve layout & aesthetics (Research design conventions, talk to user)
+Build in help functions (Help Form, link to pdf)
+
+Make record locations modifiable(Use file in fixed location to determine where the record files are stored).
+/*{{{*/
+//Create Logo.				21/12/12
+	//Form Titlebar
+	//Exe Icon
+//Code PatientData btnReset	21/12/12
+
+//Create search function in Regime	23/12/12
+	/Resolve issue with searched list index != to real index value. 26/12/12
+
+//Generate Struct to store all readings for regime data 3/1/13
+	Implement into:
+		CreateNewPatient
+		DisplayCurrent
+		UpdateCurrent
+//Link record to the calculator class to calculate doses (Allows for automatic calculations) 4/1/13
+
+Allow system to work when there is no existing patient file
+	Set up method to generate an empty file
+
+Form PatientData Modify Reset for existing patients
+
+Front end to edit data for Regimes
+DONE
+Generated Forms:
+	Main menu
+	Calculators (Self-contained non recording)
+	Patient listing
+		Reads from patient records to generate list of patients
+		Refreshes each time the form is activated
+	Patient Data entry
+		Can add new patient
+		Recall and modify existing patients
+Created first iteration of a struct to store patient data
+Refresh Regime when patientdata closed/ updated
+Menubar 
+	Calculators (with keyboard shortcuts)/*}}}*/

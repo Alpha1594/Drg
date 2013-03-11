@@ -1,0 +1,694 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Serialization;
+using System.IO;
+
+namespace RegimeDatabaseCalculatorSystem
+{
+    public partial class PatientData : Form
+    {
+#region Initialisation/*{*/
+        public bool IsNewPatient;
+        public PatientData(bool New, string SearchedName)       //Generates & Configures Form <New>|<Existing> Patient
+        {  
+            InitializeComponent();
+            GetRegList();
+            if (New == true) //New patient
+            {
+                tbName.Text = SearchedName; //Name in Regime Search box used as New Patient name
+                btnSubmit.Enabled = true;   //Form has btnSubmit
+                btnSubmit.Visible = true;
+                btnUpdate.Enabled = false;
+                btnUpdate.Visible = false;
+                IsNewPatient = true;
+            }
+            else //Updating Current Patient
+            {
+                int index = int.Parse(SearchedName); //Int cast to string for polymorphic reasons
+                PopulatePatientData(index); //Populates form for patient selected from Regime 
+                btnSubmit.Enabled = false;  //Form has btnUpdate
+                btnSubmit.Visible = false;
+                btnUpdate.Enabled = true;
+                btnUpdate.Visible = true;
+                IsNewPatient = false;
+            }
+         }
+        public struct MedicalValues
+        {
+            public DateTime LastUpdate;
+            public decimal Height;
+            public int Weight;
+            public int SCreatinine;
+            public int AUC;
+            public MedicalValues(DateTime LastUpdate, decimal Height, int Weight, int SCreatinine, int AUC)
+            {
+                this.LastUpdate = LastUpdate;
+                this.Height = Height;
+                this.Weight = Weight;
+                this.SCreatinine = SCreatinine;
+                this.AUC = AUC;
+            }
+        }
+        public struct PatientDataRecords    //Defines patient atributes Reffed for access
+        {
+            public string Name;
+            public string PatientNumber;
+            public string Consultant;
+            //public List<string> Diagnosis;
+            public string Allergies;
+            public string ActRegime;
+            //public List<string> Prescription;
+            public DateTime DOB;
+            public DateTime LastDose;
+            public DateTime NextDose;
+            public byte DoseSchedule;
+            public byte CurrentTreatment;
+            public byte NoOfTreatments;
+            public string Gender;
+            public List<MedicalValues> MedVals;
+            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string Allergies, string ActRegime, DateTime DOB, DateTime LastDose, DateTime NextDose, byte DoseSchedule, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)
+            //List<string> Diagnosis,  List<string> Prescription,
+            {
+                List<MedicalValues> Placebo = new List<MedicalValues>(); //Creates MedValList
+                Placebo.Add(LatestMedVal); //Takes LatestMedVal adds it to list
+                this.Name = Name;
+                this.PatientNumber = PatientNumber;
+                this.Consultant = Consultant;
+                //this.Diagnosis = Diagnosis;
+                this.Allergies = Allergies;
+                this.ActRegime = ActRegime;
+                //this.Prescription = Prescription;
+                this.DOB = DOB;
+                this.LastDose = LastDose;
+                this.NextDose = NextDose;
+                this.DoseSchedule = DoseSchedule;
+                this.CurrentTreatment = CurrentTreatment;
+                this.NoOfTreatments = NoOfTreatments;
+                this.Gender = Gender;
+                //this.MedVal.LastUpdate = LastUpdate;
+                this.MedVals = Placebo;     //Using above to to add data sans tantrum
+                //this.MedVals.Insert(0,LatestMedVal);
+                //this.MedVal.Height = Height;
+                //this.MedVal.Weight = Weight;
+                //this.MedVal.SCreatinine = SCreatinine;
+            }
+        }
+        public static List<PatientDataRecords> Patients = new List<PatientDataRecords>();//List of patients
+        
+        public void ReadData()  //Accesses existing patient data from file; Populates List<Paients>
+        {
+            XmlSerializer XSR = new XmlSerializer(typeof(List<PatientDataRecords>));
+            if (File.Exists("PatientRecords.xml"))
+            {
+                FileStream XFile = new FileStream("PatientRecords.xml", FileMode.Open);
+                if ( XFile.Length > 0 )
+                {
+                    Patients = (List<PatientDataRecords>) XSR.Deserialize(XFile);
+                }
+                XFile.Close();
+            }
+            else
+            {
+                FileStream XFile = new FileStream("PatientRecords.xml", FileMode.CreateNew);
+                XFile.Close();
+            }
+         }
+
+        public struct Doses
+        {
+            public string DrgName;
+            public float DrgDose;
+            public string CalcMethod;
+            public string DrgAdmin;
+            public string Path;
+            public List<int> AdministrationDays;
+            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path, List<int> AdministrationDays)
+            {
+                this.DrgName = DrgName;
+                this.DrgDose = DrgDose;
+                this.CalcMethod = CalcMethod;
+                this.DrgAdmin = DrgAdmin;
+                this.Path = Path;
+                this.AdministrationDays = AdministrationDays;
+            }
+        }
+        public struct RegimeData
+        {
+            public string RegName;
+            public string Desc;
+            public string Extravasation;
+            public string Comments;
+            public List<Doses> RegimeDoses;
+            public int NoOfCycles;
+            public int DaysPerCycle;
+            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
+            {
+                this.RegName = RegName;
+                this.Desc = Desc;
+                this.Extravasation = Extravasation;
+                this.Comments = Comments;
+                this.RegimeDoses = LatestDose;
+                this.NoOfCycles = NoOfCycles;
+                this.DaysPerCycle = DaysPerCycle;
+
+            }
+        }
+        public static List<RegimeData> RegimeList = new List<RegimeData>();
+        public void ReadRegimes()  //Accesses existing patient data from file; Populates List<RegimeList>
+        {
+            XmlSerializer XSR = new XmlSerializer(typeof(List<RegimeData>));
+        PopulateList:
+            if ( File.Exists("Regimes.xml") )
+            {
+                FileStream XFile = new FileStream("Regimes.xml", FileMode.Open);
+                if ( XFile.Length > 0 )
+                {
+                    RegimeList = (List<RegimeData>) XSR.Deserialize(XFile);
+                }
+                XFile.Close();
+            }
+            else
+            {
+                FileStream XFile = new FileStream("Regimes.xml", FileMode.CreateNew);
+                XFile.Close();
+                goto PopulateList;
+            }
+        }
+        List<int> D1Days = new List<int>();
+        List<int> D2Days = new List<int>();
+        List<int> D3Days = new List<int>();
+        List<int> D4Days = new List<int>();
+        public void GetRegList()
+        {
+            RegimeList.Clear();
+            cbActRegime.Items.Clear();
+            ReadRegimes();
+            foreach ( RegimeData RD in RegimeList )
+            {
+                cbActRegime.Items.Add(RD.RegName);
+            }
+        }
+        int RegIndex = -1;
+        public TimeSpan DayOfRegime;
+#endregion/*}*/
+
+        private void btnSubmit_Click(object sender, EventArgs e) //Submit New Record
+        {
+            ReadData();         //Populates List<Patient> with existing data
+            MedicalValues LMV = new MedicalValues(DateTime.Now.Date,//Last update DateTime<>
+                numHeight.Value,//decimal
+                Convert.ToInt32(numWeight.Value),//Int
+                (int) numSC.Value,  //int
+                (int) numAUC.Value
+            );
+            //New instance of PatientDataRecords Populated with current patients info
+            PatientDataRecords X = new PatientDataRecords(
+                    tbName.Text, //str
+                    tbPatNum.Text,
+                    cbConsultant.Text,//str
+                    //lbDiagnosis.Text,//str<>
+                    tbAllergies.Text,//str<>
+                    cbActRegime.Text,
+                    //lbPrescriptions.Text,//str<>
+                    DateTime.Parse(dtDOB.Text),//DateTime
+                    DateTime.Parse(dtLastDose.Text),//DateTime
+                    DateTime.Parse(dtNextDose.Text),//DateTime
+                    byte.Parse(cbDoseSchedule.Text),//Byte
+                    byte.Parse(numCurrentTreatment.Value.ToString()),//Byte
+                    byte.Parse(cbNoOfTreatments.Text),//Byte
+                    cbGender.Text,//Str
+                    LMV
+                    );
+            XmlSerializer XSR = new XmlSerializer(typeof(List<PatientDataRecords>));	//new instance of XML serialiser to store List PatientDataRecords
+            Patients.Add(X);	//Appends latest data to list
+            FileStream DataOut = new FileStream("PatientRecords.xml", FileMode.Create);	//Creates file object
+            XSR.Serialize(DataOut, Patients);   //Outputs data
+            DataOut.Close();	//Closes File
+            MessageBox.Show("Data Recorded", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+#region Existing Patient /*{*/
+        private void PopulatePatientData(int index) //Loads an existing patients data
+        {
+            ReadData();
+            numIndex.Value = index;     //PatientIndex recorded in invisible numbox so accessible to Update function 
+            tbName.Text = Patients[index].Name;
+            tbPatNum.Text = Patients[index].PatientNumber;
+            cbConsultant.Text = Patients[index].Consultant;
+            tbAllergies.Text = Patients[index].Allergies;
+            cbActRegime.Text = Patients[index].ActRegime;
+            dtLastDose.Value = Patients[index].LastDose;
+            dtNextDose.Value = Patients[index].NextDose;
+            cbDoseSchedule.Text = Patients[index].DoseSchedule.ToString();
+            numCurrentTreatment.Value = Patients[index].CurrentTreatment;
+            cbNoOfTreatments.Text = Patients[index].NoOfTreatments.ToString();
+            dtDOB.Value = Patients[index].DOB;
+            cbGender.Text = Patients[index].Gender;
+
+            int iMax = Patients[index].MedVals.Count();
+            numWeight.Value = Patients[index].MedVals[iMax - 1].Weight;
+            numSC.Value = Patients[index].MedVals[iMax - 1].SCreatinine;  //int
+            numHeight.Value = Patients[index].MedVals[iMax - 1].Height;
+            
+            //Populate Caldendar
+            List<DateTime> Readings = new List<DateTime>();
+            foreach ( MedicalValues MV in Patients[index].MedVals )
+            {
+                Readings.Add(MV.LastUpdate);
+            }
+            calDataUpdate.BoldedDates = Readings.ToArray();
+
+    #region RegimeInfoPopulation
+            
+            int Count = 0;
+            foreach ( RegimeData RD in RegimeList )
+            {
+                if ( RD.RegName == cbActRegime.Text )
+                {
+                    RegIndex = Count;
+                    break;
+                }
+                else
+                    ++Count;
+            }
+            if (RegIndex != -1)
+            {
+                //MessageBox.Show("Reg = " + RegIndex.ToString());
+                int MaxIndex = RegimeList[RegIndex].RegimeDoses.Count;
+                //MessageBox.Show("Regime Elements " + (MaxIndex+1).ToString());
+                
+           
+                switch ( MaxIndex )
+                {
+                    case 4:     llblDrgName4.Text = RegimeList[RegIndex].RegimeDoses[3].DrgName;
+                                lblDrgDose4.Text = RegimeList[RegIndex].RegimeDoses[3].DrgDose.ToString();
+                                lblCalcMethod4.Text = RegimeList[RegIndex].RegimeDoses[3].CalcMethod;
+                                goto case 3;
+
+                    case 3:     llblDrgName3.Text = RegimeList[RegIndex].RegimeDoses[2].DrgName;
+                                lblDrgDose3.Text = RegimeList[RegIndex].RegimeDoses[2].DrgDose.ToString();
+                                lblCalcMethod3.Text = RegimeList[RegIndex].RegimeDoses[2].CalcMethod;
+                                goto case 2;
+                    case 2:
+                                llblDrgName2.Text = RegimeList[RegIndex].RegimeDoses[1].DrgName;
+                                lblDrgDose2.Text = RegimeList[RegIndex].RegimeDoses[1].DrgDose.ToString();
+                                lblCalcMethod2.Text = RegimeList[RegIndex].RegimeDoses[1].CalcMethod;
+                                goto case 1;
+
+                    case 1:     llblDrgName1.Text = RegimeList[RegIndex].RegimeDoses[0].DrgName;
+                                lblDrgDose1.Text = RegimeList[RegIndex].RegimeDoses[0].DrgDose.ToString();
+                                lblCalcMethod1.Text = RegimeList[RegIndex].RegimeDoses[0].CalcMethod;
+                                break;
+
+                    default:
+                                MessageBox.Show("You done goofed");
+                        break;
+                }
+
+                DrgVisibilityToggle(MaxIndex);
+                DayToAdminister(MaxIndex);
+            }
+            else
+            {
+                MessageBox.Show("this patent isnt on a Regiem");
+            }
+
+
+            DayOfRegime = DateTime.Today.Date - Patients[index].MedVals[0].LastUpdate.Date;
+            lblDayOfRegime.Text = DayOfRegime.TotalDays.ToString();
+    #endregion
+
+            #region Modifiers
+            fullEditModeToolStripMenuItem.Visible = true;
+            fullEditModeToolStripMenuItem.Enabled = true;
+            tbName.Enabled = false;
+            tbPatNum.Enabled = false;
+            cbGender.Enabled = false;
+            dtDOB.Enabled = false;
+            #endregion
+        }
+
+        public bool ToGive(int index)
+        {
+            List<int>[] ListList = {D1Days, D2Days, D3Days, D4Days};
+            bool give = false;
+
+            foreach ( int i in ListList[index] )
+            {
+                if (i.Equals(DayOfRegime.TotalDays))   //(Math.Truncate(DayOfRegime.TotalDays)/i)==0) 
+                    give = true;
+            }
+            MessageBox.Show(index.ToString() + " => " + give.ToString());
+            return give;
+        }
+
+        public void DrgVisibilityToggle(int MaxIndex)
+        {
+            switch (MaxIndex)
+            {
+                case 1:
+                    llblDrgName2.Visible = false;
+                    lblCalcMethod2.Visible = false;
+                    lblDrgDose2.Visible = false;
+                    tbCalcDose2.Visible = false;
+                    goto case 2;
+
+                case 2:
+                    llblDrgName3.Visible = false;
+                    lblCalcMethod3.Visible = false;
+                    lblDrgDose3.Visible = false;
+                    tbCalcDose3.Visible = false;
+                    goto case 3;
+
+                case 3:
+                    llblDrgName4.Visible = false;
+                    lblCalcMethod4.Visible = false;
+                    lblDrgDose4.Visible = false;
+                    tbCalcDose4.Visible = false;
+                break;
+            }
+        }
+
+        public void DayToAdminister(int MaxIndex)
+        {
+            List<int>[] ListList = { D1Days, D2Days, D3Days, D4Days };
+            switch ( MaxIndex )
+            {
+                case 3:
+                    if ( !ToGive(3) )
+                    {
+                        llblDrgName4.Visible = false;
+                        lblCalcMethod4.Visible = false;
+                        lblDrgDose4.Visible = false;
+                        tbCalcDose4.Visible = false;
+                    }
+                    goto case 2;
+
+                case 2:
+                    if ( !ToGive(2) )
+                    {
+                        llblDrgName3.Visible = false;
+                        lblCalcMethod3.Visible = false;
+                        lblDrgDose3.Visible = false;
+                        tbCalcDose3.Visible = false;
+                    }
+                    goto case 1;
+
+                case 1:
+                    if ( !ToGive(1) )
+                    {
+                        llblDrgName2.Visible = false;
+                        lblCalcMethod2.Visible = false;
+                        lblDrgDose2.Visible = false;
+                        tbCalcDose2.Visible = false;
+                    }
+                    goto case 0;
+
+                case 0:
+                    if ( !ToGive(0) )
+                    {
+                        llblDrgName1.Visible = false;
+                        lblCalcMethod1.Visible = false;
+                        lblDrgDose1.Visible = false;
+                        tbCalcDose1.Visible = false;
+                    }
+                    break;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e) //Updates Existing patient
+        {
+            int index = (int) numIndex.Value;       //Takes index value from invisible numbox (tab2)
+            PatientDataRecords a = Patients[index]; //Value @ list[index] copied to new instance of PatientDataRecords
+            Patients.RemoveAt(index);               //Old instance removed from list
+            a.Name = tbName.Text;                   //Populate a
+            a.PatientNumber = tbPatNum.Text;
+            a.Consultant = cbConsultant.Text;
+            a.Allergies = tbAllergies.Text;
+            a.ActRegime = cbActRegime.Text;
+            a.LastDose = dtLastDose.Value;
+            a.NextDose = dtNextDose.Value;
+            a.DoseSchedule = (byte) Convert.ToInt32(cbDoseSchedule.Text); //Converted to make it castable
+            a.CurrentTreatment = (byte)numCurrentTreatment.Value;
+            a.NoOfTreatments = (byte) Convert.ToInt32(cbNoOfTreatments.Text);
+            a.DOB = dtDOB.Value;
+            a.Gender = cbGender.Text;
+
+            MedicalValues LMV = new MedicalValues(DateTime.Now.Date,//Last update DateTime<>
+                numHeight.Value,//decimal
+                Convert.ToInt32(numWeight.Value),//Int
+                (int) numSC.Value,  //int
+                (int) numAUC.Value
+            );
+            a.MedVals.Add(LMV);
+            Patients.Add(a);                        //Append updates from a to list
+
+            XmlSerializer XSR = new XmlSerializer(typeof(List<PatientDataRecords>));	//new instance of XML serialiser to store List PatientDataRecords
+            FileStream DataOut = new FileStream("PatientRecords.xml", FileMode.Create);	//Creates file object
+            XSR.Serialize(DataOut, Patients);   //Outputs data
+            DataOut.Close();	//Closes File
+            MessageBox.Show("Data Updated", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void calDataUpdate_DateSelected(object sender, DateRangeEventArgs e) //Shows reading for clicked day
+        {
+            int index = (int) numIndex.Value;                   //Current Index
+            DateTime Selected = calDataUpdate.SelectionStart;   //Clicked Cal Value
+
+            List<MedicalValues> MedValEntries = Patients[index].MedVals.ToList();   //List of MedVal Updates for current patient
+            foreach ( MedicalValues MV in MedValEntries )
+            {
+                if ( MV.LastUpdate == Selected )
+                {
+                    numHeight.Value = MV.Height;
+                    numWeight.Value = MV.Weight;
+                    numSC.Value = MV.SCreatinine;
+                }
+            }
+            DoCalculations();
+        }
+
+#endregion/*}*/
+
+#region TabControl /*{*/
+        private void btnNext_Click(object sender, EventArgs e) //Moves to next tab
+        {
+            ++tabPatientData.SelectedIndex;
+        }
+
+        private void btnNextEnableCheck_Click(object sender, EventArgs e) //Determines btnNext visibility
+        {
+            if ( tabPatientData.SelectedIndex == 2 )
+                {
+                    btnNext.Visible = false;
+                    btnNext.Enabled = false;
+                }
+                else
+                {
+                    btnNext.Visible = true;
+                    btnNext.Enabled = true;
+                }
+        }
+#endregion /*}*/
+
+        private void btnReset_Click(object sender, EventArgs e) //If existing patient Restore initial stuff TODO ELSE .clear;
+        {
+            if (IsNewPatient == true)
+            {
+                TextBox[] TB = { tbName, tbPatNum, tbAllergies };
+                foreach (TextBox X in TB)
+                {
+                    X.Clear();
+                }
+
+                ComboBox[] CB = { cbConsultant, cbDoseSchedule, cbNoOfTreatments, cbGender };
+                foreach (ComboBox Y in CB)
+                {
+                    Y.ResetText();
+                }
+
+                NumericUpDown[] NU = { numCurrentTreatment, numHeight, numWeight, numSC };
+                foreach (NumericUpDown Z in NU)
+                {
+                    Z.ResetText();
+                }
+
+                DateTimePicker[] DT = { dtLastDose, dtNextDose, dtDOB };
+                foreach (DateTimePicker W in DT)
+                {
+                    W.ResetText();
+                }
+            }
+            else
+            {
+                MessageBox.Show("To do for existing patient");
+            }
+        }
+
+#region Menus/*{*/
+        //Creates menubar-code link up 
+        private void bSAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculators calcBSA = new Calculators(0);
+            calcBSA.Show();
+        }
+
+        private void renalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculators calcCCR = new Calculators(1);
+            calcCCR.Show();
+        }
+
+        private void calvertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculators calcCalvert = new Calculators(2);
+            calcCalvert.Show();
+        }
+
+        private void fullEditModeToolStripMenuItem_Click(object sender, EventArgs e) //Allows all fields to be edited
+        {
+            tbName.Enabled = !tbName.Enabled;
+            tbPatNum.Enabled = !tbPatNum.Enabled;
+            cbGender.Enabled = !cbGender.Enabled;
+            dtDOB.Enabled = !dtDOB.Enabled;
+        }
+#endregion/*}*/
+
+        public void DoCalculations()
+        {
+            #region BSA
+            tbBSA.BackColor = Color.White; //Resets tb bg Color.
+            double Weight = (double)numWeight.Value;
+            double Height = (double)numHeight.Value;
+            cBSA currentBSA = new cBSA();
+            double ans = Math.Round(currentBSA.BSA(Height, Weight), 1);
+            if (ans > 2)  //Validation to prevent high doses BSA usually has a ceiling of 2.
+            {
+                string txtOut = "BSA is: " + ans.ToString() + "\nPlease discuss with the Consultant before using values greater than 2 in dosage calculations.\nPress OK accept a BSA value of 2 or Cancel to continue with existing value.";
+                DialogResult choice = MessageBox.Show(txtOut, "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (choice == DialogResult.OK)
+                {
+                    ans = 2.0;
+                }
+                else
+                {
+                    tbBSA.BackColor = Color.Red;
+                }
+            }
+            tbBSA.Text = ans.ToString();//            +" m^2";
+            #endregion
+            #region eGFR
+            int age = (int)DateTime.Now.Year - dtDOB.Value.Year; 
+            double Mass = (double)numWeight.Value;
+            double SCreat = (double)numSC.Value;
+            string g;
+            if (cbGender.Text == "Male")
+            {
+                g = "M";
+            }
+            else
+            {
+                g = "F";
+            }
+            cCCr currentCCR = new cCCr();
+            double cAns = currentCCR.CCR(age, Mass, SCreat, g);
+            tbGFR.Text = Math.Round(cAns, 0).ToString(); //+ " ml/min";
+            #endregion
+            #region Calvert
+            int auc = (int)numAUC.Value;
+            int gfr = (int)cAns;
+            cCalvert currentCalvert = new cCalvert();
+            int caAns = currentCalvert.Calvert(auc, gfr);
+            tbCa.Text = caAns.ToString();
+            #endregion
+        }
+        public void CalculateDoses()
+        {
+            
+            TextBox[] TBarray = { tbCalcDose1, tbCalcDose2, tbCalcDose3, tbCalcDose4 };
+            int MaxIndex = RegimeList[RegIndex].RegimeDoses.Count;
+            if ( RegIndex != -1 )
+            {
+                switch ( MaxIndex )
+                {
+                    case 4:
+                            if ( lblCalcMethod4.Text == "AUC" )
+                            {
+                                TBarray[3].Text = tbCa.Text;
+                            }
+                            else
+                                TBarray[3].Text = ( double.Parse(lblDrgDose4.Text) * double.Parse(tbBSA.Text) ).ToString();
+                            goto case 3;
+
+                    case 3: 
+                            if ( lblCalcMethod3.Text == "AUC" )
+                            {
+                                TBarray[2].Text = tbCa.Text;
+                            }
+                            else
+                                TBarray[2].Text = ( double.Parse(lblDrgDose3.Text) * double.Parse(tbBSA.Text) ).ToString();
+                            goto case 2;
+
+                    case 2:
+                            if ( lblCalcMethod2.Text == "AUC" )
+                            {
+                                TBarray[1].Text = tbCa.Text;
+                            }
+                            else
+                                TBarray[1].Text = ( double.Parse(lblDrgDose2.Text) * double.Parse(tbBSA.Text) ).ToString();
+                            goto case 1;
+
+                    case 1:
+                            if ( lblCalcMethod1.Text == "AUC" )
+                            {
+                                TBarray[0].Text = tbCa.Text;
+                            }
+                            else TBarray[0].Text = ( double.Parse(lblDrgDose1.Text) * double.Parse(tbBSA.Text) ).ToString();
+                            break;
+                    default:
+                            MessageBox.Show("You done goofed");
+                            break;
+                }
+            }            
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e) //Inline Calculations
+        {
+            DoCalculations();
+            CalculateDoses();
+            tabPatientData.SelectedIndex = 3;
+        }
+
+        private void RegViewer(int index)
+        {
+            UriBuilder EMCurl = new UriBuilder();
+            EMCurl.Host = "www.medicines.org.uk/EMC/medicine";
+            EMCurl.Path = RegimeList[RegIndex].RegimeDoses[index].Path;
+
+            SPCviewer SPC = new SPCviewer(EMCurl.Uri);
+            SPC.Show();
+        }
+
+        private void llblDrgName1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegViewer(0);
+        }
+
+        private void llblDrgName2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegViewer(1);
+        }
+
+        private void llblDrgName3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegViewer(2);
+        }
+    }
+}

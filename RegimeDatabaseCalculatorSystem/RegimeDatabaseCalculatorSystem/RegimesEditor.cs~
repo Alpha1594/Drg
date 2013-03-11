@@ -1,0 +1,166 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Serialization;
+using System.IO;
+
+namespace RegimeDatabaseCalculatorSystem
+{
+    public partial class RegimesEditor : Form
+    {
+        public RegimesEditor(int ChosenRegime, bool IsNew)
+        {
+            InitializeComponent();
+            pIsNew = IsNew;
+            pIndex = ChosenRegime;
+            //MessageBox.Show(ChosenRegime.ToString());
+            TextBox[] TBurl = { tbURL1, tbURL2, tbURL3 };
+            if ( IsNew )
+            {
+                btnSave.Text = "Save";
+            }
+            else
+            {
+                loadRegime(ChosenRegime);
+            }
+            
+        }
+
+        public struct Doses
+        {
+            public string DrgName;
+            public float DrgDose;
+            public string CalcMethod;
+            public string DrgAdmin;
+            public string Path;
+            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path)
+            {
+                this.DrgName = DrgName;
+                this.DrgDose = DrgDose;
+                this.CalcMethod = CalcMethod;
+                this.DrgAdmin = DrgAdmin;
+                this.Path = Path;
+            }
+        }
+        public struct RegimeData
+        {
+            public string RegName;
+            public string Desc;
+            public string Extravasation;
+            public string Comments;
+            public List<Doses> RegimeDoses;
+            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose)// 
+            {
+                this.RegName = RegName;
+                this.Desc = Desc;
+                this.Extravasation = Extravasation;
+                this.Comments = Comments;
+
+                this.RegimeDoses = LatestDose;
+
+            }
+        }
+        public static List<RegimeData> RegimeList = new List<RegimeData>();
+        public void ReadRegimes()  //Accesses existing patient data from file; Populates List<RegimeList>
+        {
+            XmlSerializer XSR = new XmlSerializer(typeof(List<RegimeData>));
+            PopulateList:
+            if (File.Exists("Regimes.xml"))
+            {
+                FileStream XFile = new FileStream("Regimes.xml", FileMode.Open);
+                if ( XFile.Length > 0 )
+                {
+                    RegimeList = (List<RegimeData>) XSR.Deserialize(XFile);
+                }
+                XFile.Close();
+            }
+            else
+            {
+                FileStream XFile = new FileStream("Regimes.xml", FileMode.CreateNew);
+                XFile.Close();
+                goto PopulateList;
+            }
+         }
+
+        public UriBuilder EMCurl = new UriBuilder();
+        public bool pIsNew;
+        public int pIndex;
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            ReadRegimes();         //Populates List<Patient> with existing data
+            //Doses TheDoses = new Doses();
+            if (!pIsNew)
+            {
+                RegimeList.RemoveAt(pIndex);
+            }
+            List<Doses> TheDoses = new List<Doses>();
+            Doses d1 = new Doses(tbDrugName1.Text, tbDose1.Text == "" ? 0 : float.Parse(tbDose1.Text), cbCalcMethod1.Text, cbAdmin1.Text, tbURL1.Text); //If empty return zero => <3 drugs in regime
+            TheDoses.Add(d1);
+            Doses d2 = new Doses(tbDrugName2.Text, tbDose2.Text == "" ? 0 : float.Parse(tbDose2.Text), cbCalcMethod2.Text, cbAdmin2.Text, tbURL2.Text);
+            TheDoses.Add(d2);
+            Doses d3 = new Doses(tbDrugName3.Text, tbDose3.Text == "" ? 0 : float.Parse(tbDose3.Text), cbCalcMethod3.Text, cbAdmin3.Text, tbURL3.Text);
+            TheDoses.Add(d3);
+            Doses d4 = new Doses(tbDrugName4.Text, tbDose4.Text == "" ? 0 : float.Parse(tbDose4.Text), cbCalcMethod4.Text, cbAdmin4.Text, tbURL4.Text);
+            TheDoses.Add(d4);
+
+            RegimeData X = new RegimeData(tbRegName.Text, tbDesc.Text, tbExtravasation.Text, tbComment.Text, TheDoses);// 
+            XmlSerializer XSR = new XmlSerializer(typeof(List<RegimeData>));	//new instance of XML serialiser to store List PatientDataRecords
+            RegimeList.Add(X);	//Appends latest data to list
+            FileStream DataOut = new FileStream("Regimes.xml", FileMode.Create);	//Creates file object
+            XSR.Serialize(DataOut, RegimeList);   //Outputs data
+            DataOut.Close();	//Closes File
+            string MessageStr = pIsNew ? "Data Recorded" : "Data Updated";
+            MessageBox.Show(MessageStr, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void loadRegime(int RegNum)
+        {
+            ReadRegimes();
+            //MessageBox.Show(RegimeList.Count.ToString());
+            
+            tbRegName.Text = RegimeList[RegNum].RegName;
+            tbDesc.Text = RegimeList[RegNum].Desc;
+            tbExtravasation.Text = RegimeList[RegNum].Extravasation;
+            tbComment.Text = RegimeList[RegNum].Comments;
+
+            tbDrugName1.Text = RegimeList[RegNum].RegimeDoses[0].DrgName;
+            tbDose1.Text = RegimeList[RegNum].RegimeDoses[0].DrgDose.ToString();
+            cbCalcMethod1.Text = RegimeList[RegNum].RegimeDoses[0].CalcMethod.ToString();
+            cbAdmin1.Text = RegimeList[RegNum].RegimeDoses[0].DrgAdmin;
+            tbURL1.Text = RegimeList[RegNum].RegimeDoses[0].Path;
+
+            tbDrugName2.Text = RegimeList[RegNum].RegimeDoses[1].DrgName;
+            tbDose2.Text = RegimeList[RegNum].RegimeDoses[1].DrgDose.ToString();
+            cbCalcMethod2.Text = RegimeList[RegNum].RegimeDoses[1].CalcMethod.ToString();
+            cbAdmin2.Text = RegimeList[RegNum].RegimeDoses[1].DrgAdmin;
+            tbURL2.Text = RegimeList[RegNum].RegimeDoses[1].Path;
+
+            tbDrugName3.Text = RegimeList[RegNum].RegimeDoses[2].DrgName;
+            tbDose3.Text = RegimeList[RegNum].RegimeDoses[2].DrgDose.ToString();
+            cbCalcMethod3.Text = RegimeList[RegNum].RegimeDoses[2].CalcMethod.ToString();
+            cbAdmin3.Text = RegimeList[RegNum].RegimeDoses[2].DrgAdmin;
+            tbURL3.Text = RegimeList[RegNum].RegimeDoses[2].Path;
+
+            //EMCurl.Host = "www.medicines.org.uk/EMC/medicine";
+            //EMCurl.Path = RegimeList[RegNum].Path;
+            //MessageBox.Show(EMCurl.Uri.ToString());
+        }
+
+        private void URLlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //MessageBox.Show("Hi");
+            //UriBuilder EMCurl = new UriBuilder();
+            //EMCurl.Host = "www.medicines.org.uk/EMC/medicine";
+            //EMCurl.Path = "18609/SPC/Epirubicin+Hydrochloride+2+mg+ml+Injection/";
+            SPCviewer SPC = new SPCviewer(EMCurl.Uri);
+            SPC.Show();
+        }
+    }
+}

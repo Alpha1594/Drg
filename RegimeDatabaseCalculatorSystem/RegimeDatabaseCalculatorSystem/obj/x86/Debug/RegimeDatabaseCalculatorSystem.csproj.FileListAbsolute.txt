@@ -1,0 +1,50 @@
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Calculators.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.StartScreen.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Properties.Resources.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.PatientData.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Regime.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.ValueSelector.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.exe
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.pdb
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.exe
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.SPCviewer.resources
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.exe
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.exe
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.pdb
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Calculators.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.StartScreen.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.PatientData.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Properties.Resources.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Regime.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.SPCviewer.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.ValueSelector.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.AdminDays.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.exe
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.pdb
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Calculators.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.StartScreen.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.AdminDays.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.PatientData.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Properties.Resources.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.Regime.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.SPCviewer.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.ValueSelector.resources
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.exe
+\\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb

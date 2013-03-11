@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ArrayOfRegimeData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegimeData>
+    <RegName>FEC</RegName>
+    <Desc>fgsagsgrae</Desc>
+    <Extravasation>asdjfasjkljgklja</Extravasation>
+    <Comments>fdagraehtase :-)</Comments>
+    <RegimeDoses>
+      <Doses>
+        <DrgName>Florouerocil</DrgName>
+        <DrgDose>69</DrgDose>
+        <CalcMethod>AUC</CalcMethod>
+        <DrgAdmin>Or</DrgAdmin>
+        <Path>F.html</Path>
+      </Doses>
+      <Doses>
+        <DrgName>Epirubicin</DrgName>
+        <DrgDose>45</DrgDose>
+        <CalcMethod>mg/m²</CalcMethod>
+        <DrgAdmin>Su</DrgAdmin>
+        <Path>E.php</Path>
+      </Doses>
+      <Doses>
+        <DrgName>Cyclophosphamide</DrgName>
+        <DrgDose>77</DrgDose>
+        <CalcMethod>AUC</CalcMethod>
+        <DrgAdmin>IV</DrgAdmin>
+        <Path>C.html</Path>
+      </Doses>
+    </RegimeDoses>
+  </RegimeData>
+  <RegimeData>
+    <RegName>LETS GET HIGH</RegName>
+    <Desc>Narcotics</Desc>
+    <Extravasation>tbExtravasation</Extravasation>
+    <Comments>coma coma chamelon</Comments>
+    <RegimeDoses>
+      <Doses>
+        <DrgName>COCAiNE</DrgName>
+        <DrgDose>5</DrgDose>
+        <CalcMethod>AUC</CalcMethod>
+        <DrgAdmin>Or</DrgAdmin>
+        <Path>fgakga</Path>
+      </Doses>
+      <Doses>
+        <DrgName>SPEED</DrgName>
+        <DrgDose>42</DrgDose>
+        <CalcMethod>mg/m²</CalcMethod>
+        <DrgAdmin>Ven</DrgAdmin>
+        <Path>fgshkgfasdhakj</Path>
+      </Doses>
+      <Doses>
+        <DrgName />
+        <DrgDose>0</DrgDose>
+        <CalcMethod />
+        <DrgAdmin />
+        <Path />
+      </Doses>
+      <Doses>
+        <DrgName />
+        <DrgDose>0</DrgDose>
+        <CalcMethod />
+        <DrgAdmin />
+        <Path />
+      </Doses>
+    </RegimeDoses>
+  </RegimeData>
+</ArrayOfRegimeData>
