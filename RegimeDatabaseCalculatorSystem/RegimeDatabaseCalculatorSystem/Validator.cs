@@ -105,7 +105,7 @@ namespace RegimeDatabaseCalculatorSystem
             	default: str = "WTF";
             		 break;
 			}
-            if (str !=0)
+            if (ErrorType != 0)
 				MessageBox.Show(str, "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             /* if (ErrorType == 1) */

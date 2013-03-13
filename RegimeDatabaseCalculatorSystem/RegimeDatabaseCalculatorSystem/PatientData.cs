@@ -280,11 +280,8 @@ namespace RegimeDatabaseCalculatorSystem
             }
             if (RegIndex != -1)
             {
-                //MessageBox.Show("Reg = " + RegIndex.ToString());
                 int MaxIndex = RegimeList[RegIndex].RegimeDoses.Count;
-                //MessageBox.Show("Regime Elements " + (MaxIndex+1).ToString());
-                
-           
+                           
                 switch ( MaxIndex )
                 {
                     case 4:     llblDrgName4.Text = RegimeList[RegIndex].RegimeDoses[3].DrgName;
@@ -345,7 +342,7 @@ namespace RegimeDatabaseCalculatorSystem
                 if (i.Equals(DayOfRegime.TotalDays))   //(Math.Truncate(DayOfRegime.TotalDays)/i)==0) 
                     give = true;
             }
-            MessageBox.Show(index.ToString() + " => " + give.ToString());
+            //MessageBox.Show(index.ToString() + " => " + give.ToString());
             return give;
         }
 
