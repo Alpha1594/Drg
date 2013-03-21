@@ -21,17 +21,16 @@ namespace RegimeDatabaseCalculatorSystem
             double DAge =(double) age;
             double K;
             if (g == "M")
-            {
+            /* { */
                 K = 1.32;
-            }
+            /* } */
             else
-            {
+            /* { */
                 K = 1.04;
-            }
+            /* } */
             double calculations = ((140 - age) * Mass * K) / SCreat;
             int ans = (int) Math.Round(calculations, 0);
             return ans;
-
         }
     }
 

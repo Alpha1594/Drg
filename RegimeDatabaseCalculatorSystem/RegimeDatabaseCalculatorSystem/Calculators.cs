@@ -17,22 +17,23 @@ namespace RegimeDatabaseCalculatorSystem
             tabCalculators.SelectedIndex = tab;
         }
 
-        private void btnBSA_Click(object sender, EventArgs e)  //BSA Frontend code-GUI interface
+        private void btnBSA_Click(object sender, EventArgs e)	//BSA Frontend code-GUI interface
         {
             int BSAErrorCode = 0;
-            tbBSA.BackColor = Color.White; //Resets tb bg Color.
+            TextBox[] BSAinputs = { tbWeight, tbHeight };
+            /* tbBSA.BackColor = Color.White;						//Resets tb bg Color. */
+
             Validator BSAval = new Validator();
 
-            TextBox[] BSAinputs = { tbWeight, tbHeight };
-            foreach (TextBox TB in BSAinputs)
+            foreach (TextBox TB in BSAinputs)					// Input Validation
             {
                 int BSAstatus = BSAval.Check(1, 0, TB.Text);
-                if (BSAstatus != 0)					//If error show warning, change bg colour & Skip calculation
+                if (BSAstatus != 0)								//If error show warning, change bg colour & Skip calculation
                 {
                     TB.BackColor = Color.Red;
-                    BSAErrorCode = BSAstatus;		//!!
+                    BSAErrorCode = BSAstatus;					//!!
                     tbBSA.Clear();
-                    goto EOF;
+                    goto EOF;									// TODO Try Placing Lines 41..58 in the else section && Add EOF Here
                 }
                 else TB.BackColor = Color.White;
             }
@@ -40,7 +41,7 @@ namespace RegimeDatabaseCalculatorSystem
             double Height = double.Parse(tbHeight.Text);
             cBSA currentBSA = new cBSA();
             double ans = Math.Round(currentBSA.BSA(Height, Weight), 1);
-            if ( ans > 2 )  //Validation to prevent high doses BSA usually has a ceiling of 2.
+            if ( ans > 2 )  //Validation to prevent high doses. BSA usually has a ceiling of 2.
             {
                 string txtOut = "BSA is: " + ans.ToString() + "\nPlease discuss with the Consultant before using values greater than 2 in dosage calculations.\nPress OK accept a BSA value of 2 or Cancel to continue with existing value.";
                 DialogResult choice = MessageBox.Show(txtOut, "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -61,18 +62,19 @@ namespace RegimeDatabaseCalculatorSystem
         private void btneCCR_Click(object sender, EventArgs e)  //eCCR Frontend code-GUI interface
         {
             int eCCRErrorCode = 0;
-            Validator eCCRval = new Validator();
             TextBox[] eCCRinputs = { tbMass, tbSC, tbAge };
+
+            Validator eCCRval = new Validator();
+
             foreach (TextBox TB in eCCRinputs)
             {
-                int eCCRstatus = eCCRval.Check(TB.Name == "tbAge" ? 0 : 1, 0, TB.Text);
+                int eCCRstatus = eCCRval.Check(TB.Name == "tbAge" ? 0 : 1, 0, TB.Text);			//!!
                 if (eCCRstatus != 0)
                 {
                     TB.BackColor = Color.Red;
                     eCCRErrorCode = eCCRstatus;
                     tbCCr.Clear();
                     goto EOF;
-
                 }
                 else TB.BackColor = Color.White;
             }
@@ -81,14 +83,14 @@ namespace RegimeDatabaseCalculatorSystem
             double Mass = double.Parse(tbMass.Text);
             double SCreat = double.Parse(tbSC.Text);
             string g;
-            if ( checkBox1.Checked == true )
-            {
+            if ( checkBox1.Checked == true )					// TODO rename checkbox
+            /* { */
                 g = "M";
-            }
+            /* } */
             else
-            {
+            /* { */
                 g = "F";
-            }
+            /* } */
             cCCr currentCCR = new cCCr();
             double ans = currentCCR.CCR(age, Mass, SCreat, g);
             tbCCr.Text = Math.Round(ans, 0).ToString();
@@ -99,8 +101,10 @@ namespace RegimeDatabaseCalculatorSystem
         private void btnCa_Click(object sender, EventArgs e)  //Calvert Frontend code-GUI interface
         {
             int CaErrorCode = 0;
-            Validator eCalval = new Validator();
             TextBox[] eCCRinputs = { tbAUC, tbGFR };
+
+            Validator eCalval = new Validator();
+
             foreach (TextBox TB in eCCRinputs)
             {
                 int 
@@ -111,7 +115,6 @@ namespace RegimeDatabaseCalculatorSystem
                     CaErrorCode = CalStatus;
                     tbDose.Clear();
                     goto EOF;
-
                 }
                 else TB.BackColor = Color.White;
             }
@@ -126,6 +129,8 @@ namespace RegimeDatabaseCalculatorSystem
         }
 
         private void button3_Click(object sender, EventArgs e)//Copies Result of eCCR to Calvert & Jumps to the Calvert tab.
+			// TODO Rename btn3 && 4 
+			// Try to merge these two event handlers
         {
             tbGFR.Text = tbCCr.Text;
             tabCalculators.SelectedIndex = 2;
@@ -139,9 +144,9 @@ namespace RegimeDatabaseCalculatorSystem
         private void tbCCr_TextChanged(object sender, EventArgs e) //Only activates btnUse4Calvert when tb populated
         {
             if (tbCCr.Text == "")
-            {
+            /* { */
                 btnUse4Calvert.Enabled = false;
-            }
+            /* } */
             else btnUse4Calvert.Enabled = true;
         }
     }

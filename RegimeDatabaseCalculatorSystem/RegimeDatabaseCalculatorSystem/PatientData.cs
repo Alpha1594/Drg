@@ -14,7 +14,7 @@ namespace RegimeDatabaseCalculatorSystem
 {
     public partial class PatientData : Form
     {
-#region Initialisation/*{*/
+#region Initialisation
         public bool IsNewPatient;
         public PatientData(bool New, string SearchedName)       //Generates & Configures Form <New>|<Existing> Patient
         {  
@@ -197,7 +197,7 @@ namespace RegimeDatabaseCalculatorSystem
         }
         int RegIndex = -1;
         public TimeSpan DayOfRegime;
-#endregion/*}*/
+#endregion
 
         private void btnSubmit_Click(object sender, EventArgs e) //Submit New Record
         {
@@ -234,7 +234,7 @@ namespace RegimeDatabaseCalculatorSystem
             MessageBox.Show("Data Recorded", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-#region Existing Patient /*{*/
+#region Existing Patient
         private void PopulatePatientData(int index) //Loads an existing patients data
         {
             ReadData();
@@ -472,9 +472,9 @@ namespace RegimeDatabaseCalculatorSystem
             DoCalculations();
         }
 
-#endregion/*}*/
+#endregion
 
-#region TabControl /*{*/
+#region TabControl
         private void btnNext_Click(object sender, EventArgs e) //Moves to next tab
         {
             ++tabPatientData.SelectedIndex;
@@ -493,7 +493,7 @@ namespace RegimeDatabaseCalculatorSystem
                     btnNext.Enabled = true;
                 }
         }
-#endregion /*}*/
+#endregion
 
         private void btnReset_Click(object sender, EventArgs e) //If existing patient Restore initial stuff TODO ELSE .clear;
         {
@@ -524,12 +524,12 @@ namespace RegimeDatabaseCalculatorSystem
                 }
             }
             else
-            {
+            /* { */
                 MessageBox.Show("To do for existing patient");
-            }
+            /* } */
         }
 
-#region Menus/*{*/
+#region Menus
         //Creates menubar-code link up 
         private void bSAToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -556,7 +556,7 @@ namespace RegimeDatabaseCalculatorSystem
             cbGender.Enabled = !cbGender.Enabled;
             dtDOB.Enabled = !dtDOB.Enabled;
         }
-#endregion/*}*/
+#endregion
 
         public void DoCalculations()
         {
@@ -571,13 +571,13 @@ namespace RegimeDatabaseCalculatorSystem
                 string txtOut = "BSA is: " + ans.ToString() + "\nPlease discuss with the Consultant before using values greater than 2 in dosage calculations.\nPress OK accept a BSA value of 2 or Cancel to continue with existing value.";
                 DialogResult choice = MessageBox.Show(txtOut, "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (choice == DialogResult.OK)
-                {
+                /* { */
                     ans = 2.0;
-                }
+                /* } */
                 else
-                {
+                /* { */
                     tbBSA.BackColor = Color.Red;
-                }
+                /* } */
             }
             tbBSA.Text = ans.ToString();//            +" m^2";
             #endregion
@@ -587,13 +587,13 @@ namespace RegimeDatabaseCalculatorSystem
             double SCreat = (double)numSC.Value;
             string g;
             if (cbGender.Text == "Male")
-            {
+            /* { */
                 g = "M";
-            }
+            /* } */
             else
-            {
+            /* { */
                 g = "F";
-            }
+            /* } */
             cCCr currentCCR = new cCCr();
             double cAns = currentCCR.CCR(age, Mass, SCreat, g);
             tbGFR.Text = Math.Round(cAns, 0).ToString(); //+ " ml/min";
@@ -617,43 +617,43 @@ namespace RegimeDatabaseCalculatorSystem
                 {
                     case 4:
                             if ( lblCalcMethod4.Text == "AUC" )
-                            {
+                            /* { */
                                 TBarray[3].Text = tbCa.Text;
-                            }
+                            /* } */
                             else
                                 TBarray[3].Text = ( double.Parse(lblDrgDose4.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 3;
 
                     case 3: 
                             if ( lblCalcMethod3.Text == "AUC" )
-                            {
+                            /* { */
                                 TBarray[2].Text = tbCa.Text;
-                            }
+                            /* } */
                             else
                                 TBarray[2].Text = ( double.Parse(lblDrgDose3.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 2;
 
                     case 2:
                             if ( lblCalcMethod2.Text == "AUC" )
-                            {
+                            /* { */
                                 TBarray[1].Text = tbCa.Text;
-                            }
+                            /* } */
                             else
                                 TBarray[1].Text = ( double.Parse(lblDrgDose2.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 1;
 
                     case 1:
                             if ( lblCalcMethod1.Text == "AUC" )
-                            {
+                            /* { */
                                 TBarray[0].Text = tbCa.Text;
-                            }
+                            /* } */
                             else TBarray[0].Text = ( double.Parse(lblDrgDose1.Text) * double.Parse(tbBSA.Text) ).ToString();
                             break;
                     default:
                             MessageBox.Show("You done goofed");
                             break;
                 }
-            }            
+            }
         }
 
         private void btnCalc_Click(object sender, EventArgs e) //Inline Calculations
@@ -687,5 +687,7 @@ namespace RegimeDatabaseCalculatorSystem
         {
             RegViewer(2);
         }
+
+		// TODO Regime 3
     }
 }

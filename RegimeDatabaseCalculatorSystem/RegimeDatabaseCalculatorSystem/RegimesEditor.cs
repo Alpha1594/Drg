@@ -22,13 +22,13 @@ namespace RegimeDatabaseCalculatorSystem
             //MessageBox.Show(ChosenRegime.ToString());
             TextBox[] TBurl = { tbURL1, tbURL2, tbURL3 };
             if ( IsNew )
-            {
+            /* { */
                 btnSave.Text = "Save";
-            }
+            /* } */
             else
-            {
+            /* { */
                 loadRegime(ChosenRegime);
-            }
+            /* } */
         }
 
         public struct Doses
