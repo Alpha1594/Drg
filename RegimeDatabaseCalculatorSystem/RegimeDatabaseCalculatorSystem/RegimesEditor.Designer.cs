@@ -59,7 +59,6 @@
             this.tbDrugName2 = new System.Windows.Forms.TextBox();
             this.tbDose1 = new System.Windows.Forms.TextBox();
             this.tbDrugName1 = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tbRegName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.numNoCycles = new System.Windows.Forms.NumericUpDown();
@@ -69,15 +68,14 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNoCycles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numDaysCycle)).BeginInit();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numNoCycles ) ).BeginInit();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numDaysCycle ) ).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(-1, 64);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -365,16 +363,6 @@
             this.tbDrugName1.TabIndex = 4;
             this.tbDrugName1.Text = "tbDrugName1";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(332, 234);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // tbRegName
             // 
             this.tbRegName.Location = new System.Drawing.Point(4, 38);
@@ -442,7 +430,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tbRegName);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ( (System.Drawing.Icon) ( resources.GetObject("$this.Icon") ) );
             this.Name = "RegimesEditor";
             this.Text = "RegimeEditor";
             this.tabControl1.ResumeLayout(false);
@@ -450,8 +438,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNoCycles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numDaysCycle)).EndInit();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numNoCycles ) ).EndInit();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numDaysCycle ) ).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,7 +460,6 @@
         private System.Windows.Forms.TextBox tbDrugName3;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox tbDesc;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ComboBox cbAdmin3;
         private System.Windows.Forms.ComboBox cbAdmin2;
         private System.Windows.Forms.ComboBox cbAdmin1;

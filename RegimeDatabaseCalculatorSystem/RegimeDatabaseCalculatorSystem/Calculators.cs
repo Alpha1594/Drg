@@ -20,8 +20,7 @@ namespace RegimeDatabaseCalculatorSystem
         private void btnBSA_Click(object sender, EventArgs e)	//BSA Frontend code-GUI interface
         {
             int BSAErrorCode = 0;
-            TextBox[] BSAinputs = { tbWeight, tbHeight };
-            /* tbBSA.BackColor = Color.White;						//Resets tb bg Color. */
+            TextBox[] BSAinputs = {tbHeight, tbWeight };
 
             Validator BSAval = new Validator();
 
@@ -31,9 +30,9 @@ namespace RegimeDatabaseCalculatorSystem
                 if (BSAstatus != 0)								//If error show warning, change bg colour & Skip calculation
                 {
                     TB.BackColor = Color.Red;
-                    BSAErrorCode = BSAstatus;					//!!
+                    BSAErrorCode = BSAstatus;
                     tbBSA.Clear();
-                    goto EOF;									// TODO Try Placing Lines 41..58 in the else section && Add EOF Here
+                    goto EOF;
                 }
                 else TB.BackColor = Color.White;
             }
@@ -46,13 +45,9 @@ namespace RegimeDatabaseCalculatorSystem
                 string txtOut = "BSA is: " + ans.ToString() + "\nPlease discuss with the Consultant before using values greater than 2 in dosage calculations.\nPress OK accept a BSA value of 2 or Cancel to continue with existing value.";
                 DialogResult choice = MessageBox.Show(txtOut, "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if ( choice == DialogResult.OK )
-                {
                     ans = 2.0;
-                }
                 else
-                {
                     tbBSA.BackColor = Color.Red;
-                }
             }
             tbBSA.Text = ans.ToString();
         EOF:
@@ -62,7 +57,7 @@ namespace RegimeDatabaseCalculatorSystem
         private void btneCCR_Click(object sender, EventArgs e)  //eCCR Frontend code-GUI interface
         {
             int eCCRErrorCode = 0;
-            TextBox[] eCCRinputs = { tbMass, tbSC, tbAge };
+            TextBox[] eCCRinputs = {tbAge, tbMass, tbSC };
 
             Validator eCCRval = new Validator();
 
@@ -83,14 +78,10 @@ namespace RegimeDatabaseCalculatorSystem
             double Mass = double.Parse(tbMass.Text);
             double SCreat = double.Parse(tbSC.Text);
             string g;
-            if ( checkBox1.Checked == true )					// TODO rename checkbox
-            /* { */
+            if ( cbGender.Checked == true )
                 g = "M";
-            /* } */
             else
-            /* { */
                 g = "F";
-            /* } */
             cCCr currentCCR = new cCCr();
             double ans = currentCCR.CCR(age, Mass, SCreat, g);
             tbCCr.Text = Math.Round(ans, 0).ToString();
@@ -128,26 +119,28 @@ namespace RegimeDatabaseCalculatorSystem
             eCalval.ErrorMessage(CaErrorCode);
         }
 
-        private void button3_Click(object sender, EventArgs e)//Copies Result of eCCR to Calvert & Jumps to the Calvert tab.
-			// TODO Rename btn3 && 4 
-			// Try to merge these two event handlers
+        private void tbCCr_TextChanged(object sender, EventArgs e)
+            //Only activates btnUseForCalvert when tb populated
         {
-            tbGFR.Text = tbCCr.Text;
-            tabCalculators.SelectedIndex = 2;
-        }
-
-        private void button4_Click(object sender, EventArgs e) //Jumps from Calvert tab to eCCR.
-        {
-            tabCalculators.SelectedIndex = 1;
-        }
-
-        private void tbCCr_TextChanged(object sender, EventArgs e) //Only activates btnUse4Calvert when tb populated
-        {
-            if (tbCCr.Text == "")
-            /* { */
+            if ( tbCCr.Text == "" )
                 btnUse4Calvert.Enabled = false;
-            /* } */
-            else btnUse4Calvert.Enabled = true;
+            else
+            {
+                btnUse4Calvert.Enabled = true;
+                btnUse4Calvert.Visible = true;
+            }
+        }
+
+        private void TabSwitcher_Click(object sender, EventArgs e)
+        {
+            string CalledFrom = sender.ToString();
+            if ( CalledFrom.Contains("Use result for Calvert") )
+            {
+                tbGFR.Text = tbCCr.Text;
+                tabCalculators.SelectedIndex++;
+            }
+            else
+                tabCalculators.SelectedIndex--;
         }
     }
 }

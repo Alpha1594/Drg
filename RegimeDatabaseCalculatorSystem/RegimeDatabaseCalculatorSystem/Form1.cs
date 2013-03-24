@@ -53,5 +53,10 @@ namespace RegimeDatabaseCalculatorSystem
             RV.Show();
         }
         #endregion
+
+        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"User.pdf");
+        }
     }
 }

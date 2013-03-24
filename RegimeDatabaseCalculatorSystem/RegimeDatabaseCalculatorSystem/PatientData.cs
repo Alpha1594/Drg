@@ -524,9 +524,7 @@ namespace RegimeDatabaseCalculatorSystem
                 }
             }
             else
-            /* { */
                 MessageBox.Show("To do for existing patient");
-            /* } */
         }
 
 #region Menus
@@ -571,13 +569,9 @@ namespace RegimeDatabaseCalculatorSystem
                 string txtOut = "BSA is: " + ans.ToString() + "\nPlease discuss with the Consultant before using values greater than 2 in dosage calculations.\nPress OK accept a BSA value of 2 or Cancel to continue with existing value.";
                 DialogResult choice = MessageBox.Show(txtOut, "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (choice == DialogResult.OK)
-                /* { */
                     ans = 2.0;
-                /* } */
                 else
-                /* { */
                     tbBSA.BackColor = Color.Red;
-                /* } */
             }
             tbBSA.Text = ans.ToString();//            +" m^2";
             #endregion
@@ -587,13 +581,9 @@ namespace RegimeDatabaseCalculatorSystem
             double SCreat = (double)numSC.Value;
             string g;
             if (cbGender.Text == "Male")
-            /* { */
                 g = "M";
-            /* } */
             else
-            /* { */
                 g = "F";
-            /* } */
             cCCr currentCCR = new cCCr();
             double cAns = currentCCR.CCR(age, Mass, SCreat, g);
             tbGFR.Text = Math.Round(cAns, 0).ToString(); //+ " ml/min";
@@ -617,36 +607,28 @@ namespace RegimeDatabaseCalculatorSystem
                 {
                     case 4:
                             if ( lblCalcMethod4.Text == "AUC" )
-                            /* { */
                                 TBarray[3].Text = tbCa.Text;
-                            /* } */
                             else
                                 TBarray[3].Text = ( double.Parse(lblDrgDose4.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 3;
 
                     case 3: 
                             if ( lblCalcMethod3.Text == "AUC" )
-                            /* { */
                                 TBarray[2].Text = tbCa.Text;
-                            /* } */
                             else
                                 TBarray[2].Text = ( double.Parse(lblDrgDose3.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 2;
 
                     case 2:
                             if ( lblCalcMethod2.Text == "AUC" )
-                            /* { */
                                 TBarray[1].Text = tbCa.Text;
-                            /* } */
                             else
                                 TBarray[1].Text = ( double.Parse(lblDrgDose2.Text) * double.Parse(tbBSA.Text) ).ToString();
                             goto case 1;
 
                     case 1:
                             if ( lblCalcMethod1.Text == "AUC" )
-                            /* { */
                                 TBarray[0].Text = tbCa.Text;
-                            /* } */
                             else TBarray[0].Text = ( double.Parse(lblDrgDose1.Text) * double.Parse(tbBSA.Text) ).ToString();
                             break;
                     default:

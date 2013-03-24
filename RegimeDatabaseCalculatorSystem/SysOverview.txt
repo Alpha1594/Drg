@@ -1,0 +1,10 @@
+AdminDays		55
+Calculations	45		41
+Calculators		153		146
+Form1			57		62
+PatientData		693		675
+Regime			334
+RegimesEditor	338		370
+RegimeViewer	125
+SPCviewer		20
+Validator		113

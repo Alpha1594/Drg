@@ -43,7 +43,7 @@
             this.bnteCCR = new System.Windows.Forms.Button();
             this.tbCCr = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbGender = new System.Windows.Forms.CheckBox();
             this.tbSC = new System.Windows.Forms.TextBox();
             this.tbMass = new System.Windows.Forms.TextBox();
             this.tbAge = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tCalvert = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnGetEccr = new System.Windows.Forms.Button();
             this.btnCa = new System.Windows.Forms.Button();
             this.tbDose = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -97,7 +97,7 @@
             // 
             // btnBSA
             // 
-            this.btnBSA.Location = new System.Drawing.Point(101, 152);
+            this.btnBSA.Location = new System.Drawing.Point(176, 173);
             this.btnBSA.Name = "btnBSA";
             this.btnBSA.Size = new System.Drawing.Size(100, 25);
             this.btnBSA.TabIndex = 6;
@@ -107,7 +107,7 @@
             // 
             // tbBSA
             // 
-            this.tbBSA.Location = new System.Drawing.Point(101, 93);
+            this.tbBSA.Location = new System.Drawing.Point(176, 93);
             this.tbBSA.Name = "tbBSA";
             this.tbBSA.Size = new System.Drawing.Size(100, 20);
             this.tbBSA.TabIndex = 5;
@@ -115,7 +115,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 96);
+            this.label3.Location = new System.Drawing.Point(6, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 4;
@@ -123,14 +123,14 @@
             // 
             // tbWeight
             // 
-            this.tbWeight.Location = new System.Drawing.Point(101, 51);
+            this.tbWeight.Location = new System.Drawing.Point(176, 51);
             this.tbWeight.Name = "tbWeight";
             this.tbWeight.Size = new System.Drawing.Size(100, 20);
             this.tbWeight.TabIndex = 3;
             // 
             // tbHeight
             // 
-            this.tbHeight.Location = new System.Drawing.Point(101, 28);
+            this.tbHeight.Location = new System.Drawing.Point(176, 28);
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(100, 20);
             this.tbHeight.TabIndex = 2;
@@ -138,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 54);
+            this.label2.Location = new System.Drawing.Point(6, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 1;
@@ -159,7 +159,7 @@
             this.tCG.Controls.Add(this.bnteCCR);
             this.tCG.Controls.Add(this.tbCCr);
             this.tCG.Controls.Add(this.label7);
-            this.tCG.Controls.Add(this.checkBox1);
+            this.tCG.Controls.Add(this.cbGender);
             this.tCG.Controls.Add(this.tbSC);
             this.tCG.Controls.Add(this.tbMass);
             this.tCG.Controls.Add(this.tbAge);
@@ -182,9 +182,10 @@
             this.btnUse4Calvert.Name = "btnUse4Calvert";
             this.btnUse4Calvert.Size = new System.Drawing.Size(114, 23);
             this.btnUse4Calvert.TabIndex = 10;
-            this.btnUse4Calvert.Text = "Use result for Calvert";
+            this.btnUse4Calvert.Text = "&Use result for Calvert";
             this.btnUse4Calvert.UseVisualStyleBackColor = true;
-            this.btnUse4Calvert.Click += new System.EventHandler(this.button3_Click);
+            this.btnUse4Calvert.Visible = false;
+            this.btnUse4Calvert.Click += new System.EventHandler(this.TabSwitcher_Click);
             // 
             // bnteCCR
             // 
@@ -192,7 +193,7 @@
             this.bnteCCR.Name = "bnteCCR";
             this.bnteCCR.Size = new System.Drawing.Size(100, 23);
             this.bnteCCR.TabIndex = 9;
-            this.bnteCCR.Text = "Calculate eCCR";
+            this.bnteCCR.Text = "&Calculate eCCR";
             this.bnteCCR.UseVisualStyleBackColor = true;
             this.bnteCCR.Click += new System.EventHandler(this.btneCCR_Click);
             // 
@@ -213,15 +214,15 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Creatinine Clearance Rate [ml/min]";
             // 
-            // checkBox1
+            // cbGender
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(176, 85);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbGender.AutoSize = true;
+            this.cbGender.Location = new System.Drawing.Point(176, 85);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(49, 17);
+            this.cbGender.TabIndex = 6;
+            this.cbGender.Text = "Male";
+            this.cbGender.UseVisualStyleBackColor = true;
             // 
             // tbSC
             // 
@@ -273,7 +274,7 @@
             // 
             // tCalvert
             // 
-            this.tCalvert.Controls.Add(this.button4);
+            this.tCalvert.Controls.Add(this.btnGetEccr);
             this.tCalvert.Controls.Add(this.btnCa);
             this.tCalvert.Controls.Add(this.tbDose);
             this.tCalvert.Controls.Add(this.label10);
@@ -289,15 +290,15 @@
             this.tCalvert.ToolTipText = "Determines dose based on eCCR";
             this.tCalvert.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnGetEccr
             // 
-            this.button4.Location = new System.Drawing.Point(176, 159);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Get CCR";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnGetEccr.Location = new System.Drawing.Point(176, 159);
+            this.btnGetEccr.Name = "btnGetEccr";
+            this.btnGetEccr.Size = new System.Drawing.Size(100, 23);
+            this.btnGetEccr.TabIndex = 7;
+            this.btnGetEccr.Text = "Get CCR";
+            this.btnGetEccr.UseVisualStyleBackColor = true;
+            this.btnGetEccr.Click += new System.EventHandler(this.TabSwitcher_Click);
             // 
             // btnCa
             // 
@@ -342,14 +343,14 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ( (byte) ( 0 ) ));
             this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label9.Location = new System.Drawing.Point(3, 41);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 13);
+            this.label9.Size = new System.Drawing.Size(75, 13);
             this.label9.TabIndex = 1;
-            this.label9.Text = "CCR [ml/min]";
-            this.label9.Click += new System.EventHandler(this.button4_Click);
+            this.label9.Text = "eGFR [ml/min]";
+            this.label9.Click += new System.EventHandler(this.TabSwitcher_Click);
             // 
             // label8
             // 
@@ -366,7 +367,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 228);
             this.Controls.Add(this.tabCalculators);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ( (System.Drawing.Icon) ( resources.GetObject("$this.Icon") ) );
             this.Name = "Calculators";
             this.Text = "Calculators";
             this.tabCalculators.ResumeLayout(false);
@@ -394,7 +395,7 @@
         private System.Windows.Forms.TextBox tbHeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbGender;
         private System.Windows.Forms.TextBox tbSC;
         private System.Windows.Forms.TextBox tbMass;
         private System.Windows.Forms.TextBox tbAge;
@@ -411,6 +412,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnUse4Calvert;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnGetEccr;
     }
 }
