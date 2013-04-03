@@ -13,7 +13,6 @@ C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.SPCviewer.resources
-C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.exe
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\bin\Debug\Regime.exe
@@ -48,3 +47,4 @@ C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\GenerateResource.write.1.tlog
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.exe
 \\qmcsan1\D11367$\Visual Studio 2010\Projects\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\Regime.pdb
+C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Debug\RegimeDatabaseCalculatorSystem.RegimeViewer.resources

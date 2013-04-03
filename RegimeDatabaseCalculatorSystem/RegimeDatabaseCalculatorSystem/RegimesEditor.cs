@@ -48,13 +48,13 @@ namespace RegimeDatabaseCalculatorSystem
         public struct RegimeData
         {
             public string RegName;
-            public string Desc;
+            public string[] Desc;
             public string Extravasation;
-            public string Comments;
+            public string[] Comments;
             public List<Doses> RegimeDoses;
             public int NoOfCycles;
             public int DaysPerCycle;
-            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
+            public RegimeData(string RegName, string[] Desc, string Extravasation, string[] Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
             {
                 this.RegName = RegName;
                 this.Desc = Desc;
@@ -108,7 +108,7 @@ namespace RegimeDatabaseCalculatorSystem
             if ( Validity )
             {
                 List<Doses> TheDoses = new List<Doses>();
-                if ( tbDose1.Text != "" && tbDose1.Text != "tbDose1" )
+                if ( tbDose1.Text != "" && tbDose1.Text != "Dose" )
                 {
                     int ErrCode = DoseVal.Check(1, 0, tbDose1.Text);
                     if ( ErrCode == 0 )
@@ -125,7 +125,7 @@ namespace RegimeDatabaseCalculatorSystem
                         return;
                     }
                 }
-                if ( tbDose2.Text != "" && tbDose2.Text != "tbDose2" )
+                if ( tbDose2.Text != "" && tbDose2.Text != "Dose" )
                 {
                     int ErrCode = DoseVal.Check(1, 0, tbDose2.Text);
                     if ( ErrCode == 0 )
@@ -143,7 +143,7 @@ namespace RegimeDatabaseCalculatorSystem
                     }
                 }
 
-                if ( tbDose3.Text != "" && tbDose3.Text != "tbDose3" )
+                if ( tbDose3.Text != "" && tbDose3.Text != "Dose" )
                 {
                     int ErrCode = DoseVal.Check(1, 0, tbDose3.Text);
                     if ( ErrCode == 0 )
@@ -161,7 +161,7 @@ namespace RegimeDatabaseCalculatorSystem
                     }
                 }
 
-                if ( tbDose4.Text != "" && tbDose4.Text != "tbDose4" )
+                if ( tbDose4.Text != "" && tbDose4.Text != "Dose" )
                 {
                     int ErrCode = DoseVal.Check(1, 0, tbDose4.Text);
                     if ( ErrCode == 0 )
@@ -181,7 +181,7 @@ namespace RegimeDatabaseCalculatorSystem
 
                 if ( TheDoses.Count > 0 )
                 {
-                    RegimeData X = new RegimeData(tbRegName.Text, tbDesc.Text, tbExtravasation.Text, tbComment.Text, TheDoses, (int) numNoCycles.Value, (int) numDaysCycle.Value);// 
+                    RegimeData X = new RegimeData(tbRegName.Text, tbDesc.Lines, tbExtravasation.Text, tbComment.Lines, TheDoses, (int) numNoCycles.Value, (int) numDaysCycle.Value);// 
                     XmlSerializer XSR = new XmlSerializer(typeof(List<RegimeData>));	//new instance of XML serialiser to store List PatientDataRecords
                     RegimeList.Add(X);	//Appends latest data to list
                     FileStream DataOut = new FileStream("Regimes.xml", FileMode.Create);	//Creates file object
@@ -203,9 +203,9 @@ namespace RegimeDatabaseCalculatorSystem
         {
             ReadRegimes();
             tbRegName.Text = RegimeList[RegNum].RegName;
-            tbDesc.Text = RegimeList[RegNum].Desc;
+            tbDesc.Lines= RegimeList[RegNum].Desc;
             tbExtravasation.Text = RegimeList[RegNum].Extravasation;
-            tbComment.Text = RegimeList[RegNum].Comments;
+            tbComment.Lines= RegimeList[RegNum].Comments;
             numNoCycles.Value = RegimeList[RegNum].NoOfCycles;
             numDaysCycle.Value = RegimeList[RegNum].DaysPerCycle;
 
@@ -219,12 +219,12 @@ namespace RegimeDatabaseCalculatorSystem
                     tbURL4.Text = RegimeList[RegNum].RegimeDoses[3].Path;
 
                     D4Days = RegimeList[RegNum].RegimeDoses[3].AdministrationDays;
-                    string strD4 = "[ ";
+                    string strD4 = "";
                     foreach ( int i in RegimeList[RegNum].RegimeDoses[3].AdministrationDays )
                     {
                         strD4 += i + ", ";
                     }
-                    strD4 += "]";
+                    //strD4 += "]";
                     tbAdminDays4.Text = strD4;
                     goto case 3;
 
@@ -236,12 +236,12 @@ namespace RegimeDatabaseCalculatorSystem
                     tbURL3.Text = RegimeList[RegNum].RegimeDoses[2].Path;
 
                     D3Days = RegimeList[RegNum].RegimeDoses[2].AdministrationDays;
-                    string strD3 = "[ ";
+                    string strD3 = "";
                     foreach ( int i in RegimeList[RegNum].RegimeDoses[2].AdministrationDays )
                     {
                         strD3 += i + ", ";
                     }
-                    strD3 += "]";
+                    //strD3 += "]";
                     tbAdminDays3.Text = strD3;
                     goto case 2;
 
@@ -253,12 +253,12 @@ namespace RegimeDatabaseCalculatorSystem
                     tbURL2.Text = RegimeList[RegNum].RegimeDoses[1].Path;
 
                     D2Days = RegimeList[RegNum].RegimeDoses[1].AdministrationDays;
-                    string strD2 = "[ ";
+                    string strD2 = "";
                     foreach ( int i in RegimeList[RegNum].RegimeDoses[1].AdministrationDays )
                     {
                         strD2 += i + ", ";
                     }
-                    strD2 += "]";
+                    //strD2 += "]";
                     tbAdminDays2.Text = strD2;
                     goto case 1;
 
@@ -270,12 +270,12 @@ namespace RegimeDatabaseCalculatorSystem
                     tbURL1.Text = RegimeList[RegNum].RegimeDoses[0].Path;
 
                     D1Days = RegimeList[RegNum].RegimeDoses[0].AdministrationDays;
-                    string strD1 = "[ ";
+                    string strD1 = "";
                     foreach ( int i in RegimeList[RegNum].RegimeDoses[0].AdministrationDays )
                     {
                         strD1 += i + ", ";
                     }
-                    strD1 += "]";
+                    // strD1 += "]";
                     tbAdminDays1.Text = strD1;
                     break;
             }
@@ -298,12 +298,12 @@ namespace RegimeDatabaseCalculatorSystem
             AdminDays a = new AdminDays((int) numDaysCycle.Value);
             a.ShowDialog();
             D1Days = a.Days();
-            string strOutA = "[ ";
+            string strOutA = "";
             for ( int i = 0; i < D1Days.Count; i++ )
             {
                 strOutA += D1Days[i] + ", ";
             }
-            strOutA += "]";
+            //strOutA += "]";
             tbAdminDays1.Text = strOutA;
         }
 
@@ -312,12 +312,12 @@ namespace RegimeDatabaseCalculatorSystem
             AdminDays b = new AdminDays((int) numDaysCycle.Value);
             b.ShowDialog();
             D2Days = b.Days();
-            string strOutB = "[ ";
+            string strOutB = "";
             for ( int i = 0; i < D2Days.Count; i++ )
             {
                 strOutB += D2Days[i] + ", ";
             }
-            strOutB += "]";
+            //strOutB += "]";
             //MessageBox.Show(strOutB);
             tbAdminDays2.Text = strOutB;
         }
@@ -327,12 +327,12 @@ namespace RegimeDatabaseCalculatorSystem
             AdminDays c = new AdminDays((int) numDaysCycle.Value);
             c.ShowDialog();
             D3Days = c.Days();
-            string strOutC = "[ ";
+            string strOutC = "";
             for ( int i = 0; i < D3Days.Count; i++ )
             {
                 strOutC += D3Days[i] + ", ";
             }
-            strOutC += "]";
+            //strOutC += "]";
             //MessageBox.Show(strOutC);
             tbAdminDays3.Text = strOutC;
         }
@@ -342,14 +342,28 @@ namespace RegimeDatabaseCalculatorSystem
             AdminDays d = new AdminDays((int) numDaysCycle.Value);
             d.ShowDialog();
             D4Days = d.Days();
-            string strOutD = "[ ";
+            string strOutD = "";
             for ( int i = 0; i < D4Days.Count; i++ )
             {
                 strOutD += D4Days[i] + ", ";
             }
-            strOutD += "]";
+            //strOutD += "]";
             //MessageBox.Show(strOutD);
             tbAdminDays4.Text = strOutD;
+        }
+
+        private void RegimesEditor_SizeChanged(object sender, EventArgs e)
+        {
+            tabControl1.Size = new Size(this.Size.Width-10, this.Size.Height - 80);             // Resizes tabcontrol
+
+            int NewHeight = ( tabControl1.Size.Height / 2 ) - 2*tbExtravasation.Size.Height;    // Extract size constant
+
+            tbDesc.Size = new Size(tabControl1.Size.Width-10, NewHeight);                       // Resize description
+
+            tbExtravasation.Location = new Point(0, tbDesc.Size.Height + tbDesc.Location.Y + 5);// Reposition Extravasation
+
+            tbComment.Location = new Point(0, tbExtravasation.Location.Y + tbExtravasation.Size.Height + 5); // Reposition Comment
+            tbComment.Size = new Size(tabControl1.Size.Width - 10, NewHeight);                  // Resize Comment
         }
     }
 }

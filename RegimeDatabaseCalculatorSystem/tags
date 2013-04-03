@@ -1,0 +1,541 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AUC	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public int AUC;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+AUC	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public int AUC;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+ActRegime	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string ActRegime;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+ActRegime	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string ActRegime;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+ActRegime	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string ActRegime;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+AdminDays	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^    partial class AdminDays$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+AdminDays	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^        public  AdminDays(int DaysPerCycle)$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays
+AdminDays	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^    public partial class AdminDays : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+AdministrationDays	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public List<int> AdministrationDays;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+AdministrationDays	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public List<int> AdministrationDays;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+AdministrationDays	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public List<int> AdministrationDays;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+AdministrationDays	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public List<int> AdministrationDays;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+Allergies	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Allergies;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+Allergies	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Allergies;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+Allergies	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string Allergies;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+BSA	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^        public double BSA(double Height, double Weight) \/\/BSA$/;"	m	class:RegimeDatabaseCalculatorSystem.cBSA
+CCR	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^        public int CCR(int age , double Mass, double SCreat, string g ) \/\/eCCR$/;"	m	class:RegimeDatabaseCalculatorSystem.cCCr
+CalMenu_Click	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        private void CalMenu_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+CalMenu_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void CalMenu_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+CalMenu_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void CalMenu_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+CalcMethod	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string CalcMethod;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+CalcMethod	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string CalcMethod;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+CalcMethod	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string CalcMethod;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+CalcMethod	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string CalcMethod;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+CalculateDoses	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void CalculateDoses()$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+Calculators	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^    partial class Calculators$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+Calculators	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        public Calculators(int tab)$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators
+Calculators	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^    public partial class Calculators : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+Calvert	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^        public int Calvert(int AUC, int GFR) \/\/Calvert$/;"	m	class:RegimeDatabaseCalculatorSystem.cCalvert
+Check	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public int Check(int TypeCode, int EntityCode, string input) \/\/ Returns 0=Good; 1=OutOfRange; 2=WrongType$/;"	m	class:RegimeDatabaseCalculatorSystem.Validator
+Comments	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Comments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+Comments	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Comments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+Comments	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string Comments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+Comments	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string Comments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+Consultant	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Consultant;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+Consultant	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Consultant;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+Consultant	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string Consultant;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+Culture	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^        internal static global::System.Globalization.CultureInfo Culture$/;"	p	class:RegimeDatabaseCalculatorSystem.Properties.Resources
+CurrentTreatment	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public byte CurrentTreatment;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+CurrentTreatment	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public byte CurrentTreatment;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+CurrentTreatment	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public byte CurrentTreatment;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+D1Days	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        List<int> D1Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+D1Days	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        List<int> D1Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+D1Days	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        List<int> D1Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+D1Days	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        List<int> D1Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+D2Days	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        List<int> D2Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+D2Days	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        List<int> D2Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+D2Days	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        List<int> D2Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+D2Days	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        List<int> D2Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+D3Days	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        List<int> D3Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+D3Days	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        List<int> D3Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+D3Days	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        List<int> D3Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+D3Days	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        List<int> D3Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+D4Days	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        List<int> D4Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+D4Days	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        List<int> D4Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+D4Days	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        List<int> D4Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+D4Days	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        List<int> D4Days = new List<int>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+DOB	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public DateTime DOB;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+DOB	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public DateTime DOB;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+DOB	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public DateTime DOB;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+DayOfRegime	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public TimeSpan DayOfRegime;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData
+DayToAdminister	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void DayToAdminister(int MaxIndex) \/\/ Hides non applicable regime components (Dependancy: ToGive)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+Days	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^        public List<int> Days()$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays
+DaysPerCycle	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public int DaysPerCycle;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+DaysPerCycle	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public int DaysPerCycle;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+DaysPerCycle	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public int DaysPerCycle;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+DaysPerCycle	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public int DaysPerCycle;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+Default	.\RegimeDatabaseCalculatorSystem\Properties\Settings.Designer.cs	/^        public static Settings Default$/;"	p	class:RegimeDatabaseCalculatorSystem.Properties.Settings
+Desc	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Desc;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+Desc	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Desc;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+Desc	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string Desc;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+Desc	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string Desc;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+Dispose	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays
+Dispose	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators
+Dispose	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen
+Dispose	.\RegimeDatabaseCalculatorSystem\Form2.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.Form2
+Dispose	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+Dispose	.\RegimeDatabaseCalculatorSystem\REgimeEditor.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.REgimeEditor
+Dispose	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+Dispose	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+Dispose	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+Dispose	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.SPCviewer
+Dispose	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        protected override void Dispose(bool disposing)$/;"	m	class:RegimeDatabaseCalculatorSystem.ValueSelector
+DoCalculations	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void DoCalculations()$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+DoseSchedule	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public byte DoseSchedule;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+DoseSchedule	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public byte DoseSchedule;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+DoseSchedule	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public byte DoseSchedule;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+Doses	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path, List<int> AdministrationDays)$/;"	m	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+Doses	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public struct Doses$/;"	s	class:RegimeDatabaseCalculatorSystem.PatientData
+Doses	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path, List<int> AdministrationDays)$/;"	m	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+Doses	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public struct Doses$/;"	s	class:RegimeDatabaseCalculatorSystem.Regime
+Doses	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path, List<int> AdministrationDays)$/;"	m	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+Doses	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public struct Doses$/;"	s	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+Doses	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public Doses(string DrgName, float DrgDose, string CalcMethod, string DrgAdmin, string Path, List<int> AdministrationDays)$/;"	m	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+Doses	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public struct Doses$/;"	s	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+DrgAdmin	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string DrgAdmin;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+DrgAdmin	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string DrgAdmin;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+DrgAdmin	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string DrgAdmin;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+DrgAdmin	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string DrgAdmin;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+DrgDose	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public float DrgDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+DrgDose	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public float DrgDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+DrgDose	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public float DrgDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+DrgDose	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public float DrgDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+DrgName	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string DrgName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+DrgName	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string DrgName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+DrgName	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string DrgName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+DrgName	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string DrgName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+DrgVisibilityToggle	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void DrgVisibilityToggle(int MaxIndex) \/\/ Hides unused fields (For regimes with < 4 drugs)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+EMCurl	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public UriBuilder EMCurl = new UriBuilder();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+ErrorMessage	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public void ErrorMessage(int ErrorType) \/\/ Provides user feedback when invalid input is submitted$/;"	m	class:RegimeDatabaseCalculatorSystem.Validator
+ExistingPatient	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void ExistingPatient() \/\/Opens form to update the patients records$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+Extravasation	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Extravasation;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+Extravasation	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Extravasation;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+Extravasation	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string Extravasation;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+Extravasation	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string Extravasation;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+Form2	.\RegimeDatabaseCalculatorSystem\Form2.Designer.cs	/^    partial class Form2$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+FrmDayCycle_SizeChanged	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^        private void FrmDayCycle_SizeChanged(object sender, EventArgs e)    \/\/ Resize Date selection box with the form.$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+Gender	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Gender;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+Gender	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Gender;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+Gender	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string Gender;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+GetRegList	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void GetRegList()$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+Height	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public decimal Height;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+Height	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public decimal Height;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.MedicalValues
+Height	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public decimal Height;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\Form2.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.Form2	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\REgimeEditor.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.REgimeEditor	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.SPCviewer	file:
+InitializeComponent	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        private void InitializeComponent()$/;"	m	class:RegimeDatabaseCalculatorSystem.ValueSelector	file:
+IsNewPatient	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public bool IsNewPatient;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData
+LastDose	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public DateTime LastDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+LastDose	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public DateTime LastDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+LastDose	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public DateTime LastDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+LastUpdate	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public DateTime LastUpdate;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+LastUpdate	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public DateTime LastUpdate;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.MedicalValues
+LastUpdate	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public DateTime LastUpdate;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+LoadPatientList	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public void LoadPatientList()$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+LoadRegimeList	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public void LoadRegimeList()$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+LoadRegimeList	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public void LoadRegimeList()$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+Main	.\RegimeDatabaseCalculatorSystem\Program.cs	/^        static void Main()$/;"	m	class:RegimeDatabaseCalculatorSystem.Program	file:
+MaxVal	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^            public float MaxVal;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Validator.ValLimits
+MedVals	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public List<MedicalValues> MedVals;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+MedVals	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public List<MedicalValues> MedVals;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+MedVals	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public List<MedicalValues> MedVals;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+MedicalValues	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public MedicalValues(DateTime LastUpdate, decimal Height, int Weight, int SCreatinine, int AUC)$/;"	m	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+MedicalValues	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public struct MedicalValues$/;"	s	class:RegimeDatabaseCalculatorSystem.PatientData
+MedicalValues	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public MedicalValues(DateTime LastUpdate, decimal Height, int Weight, int SCreatinine)$/;"	m	struct:RegimeDatabaseCalculatorSystem.Regime.MedicalValues
+MedicalValues	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public struct MedicalValues         \/\/Defines patients Medical atributes Reffed for access$/;"	s	class:RegimeDatabaseCalculatorSystem.Regime
+MedicalValues	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public MedicalValues(DateTime LastUpdate, decimal Height, int Weight, int SCreatinine, int AUC)$/;"	m	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+MedicalValues	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^        public struct MedicalValues$/;"	s	class:RegimeDatabaseCalculatorSystem.SharedIO
+MinVal	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^            public float MinVal;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Validator.ValLimits
+Name	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Name;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+Name	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Name;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+Name	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Name;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientList
+Name	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string Name;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+NextDose	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public DateTime NextDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+NextDose	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public DateTime NextDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+NextDose	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public DateTime NextDose;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+NoOfCycles	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public int NoOfCycles;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+NoOfCycles	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public int NoOfCycles;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+NoOfCycles	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public int NoOfCycles;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+NoOfCycles	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public int NoOfCycles;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+NoOfTreatments	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public byte NoOfTreatments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+NoOfTreatments	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public byte NoOfTreatments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+NoOfTreatments	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public byte NoOfTreatments;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+Path	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string Path;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.Doses
+Path	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string Path;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.Doses
+Path	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string Path;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.Doses
+Path	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string Path;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.Doses
+PatientData	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^    partial class PatientData$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+PatientData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public PatientData(bool New, string SearchedName)       \/\/Generates & Configures Form <New>|<Existing> Patient$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+PatientData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^    public partial class PatientData : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string Allergies, string ActRegime, DateTime DOB, DateTime LastDose, DateTime NextDose, byte DoseSchedule, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)$/;"	m	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public struct PatientDataRecords    \/\/Defines patient atributes Reffed for access$/;"	s	class:RegimeDatabaseCalculatorSystem.PatientData
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string Allergies, string ActRegime, DateTime DOB, DateTime LastDose, DateTime NextDose, byte DoseSchedule, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)$/;"	m	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public struct PatientDataRecords    \/\/Defines patient atributes Reffed for access$/;"	s	class:RegimeDatabaseCalculatorSystem.Regime
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string Allergies, string ActRegime, DateTime DOB, DateTime LastDose, DateTime NextDose, byte DoseSchedule, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)$/;"	m	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+PatientDataRecords	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^        public struct PatientDataRecords    \/\/Defines patient atributes Reffed for access$/;"	s	class:RegimeDatabaseCalculatorSystem.SharedIO
+PatientList	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public PatientList(string Name, string PatientNumber, int index)$/;"	m	struct:RegimeDatabaseCalculatorSystem.Regime.PatientList
+PatientList	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public struct PatientList           \/\/Local list to open the required record in PatientData file$/;"	s	class:RegimeDatabaseCalculatorSystem.Regime
+PatientNumber	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string PatientNumber;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.PatientDataRecords
+PatientNumber	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string PatientNumber;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientDataRecords
+PatientNumber	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string PatientNumber;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientList
+PatientNumber	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public string PatientNumber;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.PatientDataRecords
+Patients	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public static List<PatientDataRecords> Patients = new List<PatientDataRecords>();\/\/List of patients$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData
+Patients	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public static List<PatientDataRecords> Patients = new List<PatientDataRecords>();\/\/List of all patients$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime
+Patients	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^        public static List<PatientDataRecords> Patients = new List<PatientDataRecords>();\/\/List of patients$/;"	f	class:RegimeDatabaseCalculatorSystem.SharedIO
+PopulatePatientData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void PopulatePatientData(int index) \/\/ Loads an existing patients data$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+Program	.\RegimeDatabaseCalculatorSystem\Program.cs	/^    static class Program$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+REgimeEditor	.\RegimeDatabaseCalculatorSystem\REgimeEditor.Designer.cs	/^    partial class REgimeEditor$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+ReadData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void ReadData()  \/\/Accesses existing patient data from file; Populates List<Paients>$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+ReadData	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public void ReadData()      \/\/Populates Patients =List<PatientDataRecords>$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+ReadData	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^        public List<PatientDataRecords> ReadData()  \/\/Accesses existing patient data from file; Populates List<Paients>$/;"	m	class:RegimeDatabaseCalculatorSystem.SharedIO
+ReadRegimes	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public void ReadRegimes()  \/\/Accesses existing patient data from file; Populates List<RegimeList>$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+ReadRegimes	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public void ReadRegimes()  \/\/Accesses existing patient data from file; Populates List<RegimeList>$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+ReadRegimes	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public void ReadRegimes()  \/\/Accesses existing patient data from file; Populates List<RegimeList>$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+ReadRegimes	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public void ReadRegimes()  \/\/Accesses existing patient data from file; Populates List<RegimeList>$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+RegIndex	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        int RegIndex = -1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+RegName	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public string RegName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+RegName	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public string RegName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+RegName	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public string RegName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+RegName	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public string RegName;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+RegViewer	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void RegViewer(int index)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+Regime	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^    partial class Regime$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+Regime	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public Regime()     \/\/Generates Form; Populates List.$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime
+Regime	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^    public partial class Regime : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+RegimeData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)\/\/ $/;"	m	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+RegimeData	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public struct RegimeData$/;"	s	class:RegimeDatabaseCalculatorSystem.PatientData
+RegimeData	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)\/\/ $/;"	m	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+RegimeData	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public struct RegimeData$/;"	s	class:RegimeDatabaseCalculatorSystem.Regime
+RegimeData	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)\/\/ $/;"	m	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+RegimeData	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public struct RegimeData$/;"	s	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+RegimeData	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)\/\/ $/;"	m	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+RegimeData	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public struct RegimeData$/;"	s	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Form2.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Program.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\REgimeEditor.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^﻿namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem	.\RegimeDatabaseCalculatorSystem\ValueSelector.cs	/^namespace RegimeDatabaseCalculatorSystem$/;"	n
+RegimeDatabaseCalculatorSystem.Properties	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^namespace RegimeDatabaseCalculatorSystem.Properties$/;"	n
+RegimeDatabaseCalculatorSystem.Properties	.\RegimeDatabaseCalculatorSystem\Properties\Settings.Designer.cs	/^namespace RegimeDatabaseCalculatorSystem.Properties$/;"	n
+RegimeDoses	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public List<Doses> RegimeDoses;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.RegimeData
+RegimeDoses	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public List<Doses> RegimeDoses;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.RegimeData
+RegimeDoses	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^            public List<Doses> RegimeDoses;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimeViewer.RegimeData
+RegimeDoses	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^            public List<Doses> RegimeDoses;$/;"	f	struct:RegimeDatabaseCalculatorSystem.RegimesEditor.RegimeData
+RegimeList	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public static List<RegimeData> RegimeList = new List<RegimeData>();$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData
+RegimeList	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public static List<RegimeData> RegimeList = new List<RegimeData>();$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime
+RegimeList	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public static List<RegimeData> RegimeList = new List<RegimeData>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+RegimeList	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public static List<RegimeData> RegimeList = new List<RegimeData>();$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+RegimeViewer	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^    partial class RegimeViewer$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+RegimeViewer	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        public RegimeViewer()$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer
+RegimeViewer	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^    public partial class RegimeViewer : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+RegimeViewer_Activated	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        private void RegimeViewer_Activated(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+RegimeViewer_SizeChanged	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        private void RegimeViewer_SizeChanged(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+Regime_Activated	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            private void Regime_Activated(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+RegimesEditor	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^    partial class RegimesEditor$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+RegimesEditor	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public RegimesEditor(int ChosenRegime, bool IsNew)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+RegimesEditor	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^    public partial class RegimesEditor : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+ResourceManager	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^        internal static global::System.Resources.ResourceManager ResourceManager$/;"	p	class:RegimeDatabaseCalculatorSystem.Properties.Resources
+Resources	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^        internal Resources()$/;"	m	class:RegimeDatabaseCalculatorSystem.Properties.Resources	file:
+Resources	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^    internal class Resources$/;"	c	namespace:RegimeDatabaseCalculatorSystem.Properties
+SCreatinine	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public int SCreatinine;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+SCreatinine	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public int SCreatinine;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.MedicalValues
+SCreatinine	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public int SCreatinine;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+SPCbrowser	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^        private System.Windows.Forms.WebBrowser SPCbrowser;$/;"	f	class:RegimeDatabaseCalculatorSystem.SPCviewer	file:
+SPCviewer	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^    partial class SPCviewer$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+SPCviewer	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.cs	/^        public SPCviewer(Uri Filepath)$/;"	m	class:RegimeDatabaseCalculatorSystem.SPCviewer
+SPCviewer	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.cs	/^    public partial class SPCviewer : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+Settings	.\RegimeDatabaseCalculatorSystem\Properties\Settings.Designer.cs	/^    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase$/;"	c	namespace:RegimeDatabaseCalculatorSystem.Properties
+SharedIO	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^    public class SharedIO$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+StartScreen	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^    partial class StartScreen$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+StartScreen	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        public StartScreen()$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen
+StartScreen	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^    public partial class StartScreen : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+SubPatients	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        public static List<PatientList> SubPatients = new List<PatientList>();    \/\/Filtered List of patients$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime
+TabSwitcher_Click	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        private void TabSwitcher_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+Tdate	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public enum TypeOf {Tinteger, Tdouble, Tdate, Tstring}; \/\/ Returnable Datatypes$/;"	e	enum:RegimeDatabaseCalculatorSystem.Validator.TypeOf	file:
+Tdouble	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public enum TypeOf {Tinteger, Tdouble, Tdate, Tstring}; \/\/ Returnable Datatypes$/;"	e	enum:RegimeDatabaseCalculatorSystem.Validator.TypeOf	file:
+Tinteger	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public enum TypeOf {Tinteger, Tdouble, Tdate, Tstring}; \/\/ Returnable Datatypes$/;"	e	enum:RegimeDatabaseCalculatorSystem.Validator.TypeOf	file:
+ToGive	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        public bool ToGive(int index) \/\/ Function to determine if a drug should be administered on this day$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData
+Tstring	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public enum TypeOf {Tinteger, Tdouble, Tdate, Tstring}; \/\/ Returnable Datatypes$/;"	e	enum:RegimeDatabaseCalculatorSystem.Validator.TypeOf	file:
+TypeOf	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public enum TypeOf {Tinteger, Tdouble, Tdate, Tstring}; \/\/ Returnable Datatypes$/;"	g	class:RegimeDatabaseCalculatorSystem.Validator
+TypeVal	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public TypeOf TypeVal(int EntityCode, string input)				\/\/ Function to determine the datatype of $input TODO rm EntityCode from this function$/;"	m	class:RegimeDatabaseCalculatorSystem.Validator
+URLlink_LinkClicked	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void URLlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+ValLimits	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^            public ValLimits(float MinVal, float MaxVal)$/;"	m	struct:RegimeDatabaseCalculatorSystem.Validator.ValLimits
+ValLimits	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^        public struct ValLimits$/;"	s	class:RegimeDatabaseCalculatorSystem.Validator
+Validator	.\RegimeDatabaseCalculatorSystem\Validator.cs	/^    class Validator		\/\/ Shared Class to ensure that all inputs are valid.$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+ValueSelector	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^    partial class ValueSelector$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+ValueSelector	.\RegimeDatabaseCalculatorSystem\ValueSelector.cs	/^        public ValueSelector(string Purpose)$/;"	m	class:RegimeDatabaseCalculatorSystem.ValueSelector
+ValueSelector	.\RegimeDatabaseCalculatorSystem\ValueSelector.cs	/^    public partial class ValueSelector : Form$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+Weight	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^            public int Weight;$/;"	f	struct:RegimeDatabaseCalculatorSystem.PatientData.MedicalValues
+Weight	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public int Weight;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.MedicalValues
+Weight	.\RegimeDatabaseCalculatorSystem\SharedIO.cs	/^            public int Weight;$/;"	f	struct:RegimeDatabaseCalculatorSystem.SharedIO.MedicalValues
+bSAToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem bSAToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+bSAToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem bSAToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+bSAToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem bSAToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+bnteCCR	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Button bnteCCR;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnBSA	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Button btnBSA;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnBSA_Click	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        private void btnBSA_Click(object sender, EventArgs e)	\/\/BSA Frontend code-GUI interface$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnCa	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Button btnCa;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnCa_Click	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        private void btnCa_Click(object sender, EventArgs e)  \/\/Calvert Frontend code-GUI interface$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnCalc	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnCalc;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnCalcCall	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.Button btnCalcCall;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+btnCalcCall_Click	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        private void btnCalcCall_Click(object sender, EventArgs e)\/\/ Main button to open Calculator form (Selected index = 0)$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+btnCalc_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnCalc_Click(object sender, EventArgs e) \/\/Inline Calculations$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnGetEccr	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Button btnGetEccr;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btnNP	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.Button btnNP;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnNP_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void btnNP_Click(object sender, EventArgs e) \/\/Opens Form to enter data for a new patient $/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnNewReg	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^        private System.Windows.Forms.Button btnNewReg;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+btnNewReg_Click	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        private void btnNewReg_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+btnNext	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnNext;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnNextEnableCheck	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnNextEnableCheck;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnNextEnableCheck_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnNextEnableCheck_Click(object sender, EventArgs e) \/\/Determines btnNext visibility$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnNext_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnNext_Click(object sender, EventArgs e) \/\/Moves to next tab$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnRegCall	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.Button btnRegCall;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+btnRegCall_Click	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        private void btnRegCall_Click(object sender, EventArgs e)\/\/Regime$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+btnReset	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnReset;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnReset	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.Button btnReset;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnReset	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        private System.Windows.Forms.Button btnReset;$/;"	f	class:RegimeDatabaseCalculatorSystem.ValueSelector	file:
+btnReset_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnReset_Click(object sender, EventArgs e) \/\/If existing patient Restore initial stuff TODO ELSE .clear;$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnReset_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void btnReset_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnSave	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.Button btnSave;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+btnSave_Click	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void btnSave_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+btnSearch	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.Button btnSearch;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnSearch_Click_1	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            private void btnSearch_Click_1(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnSubmit	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^        private System.Windows.Forms.Button btnSubmit;$/;"	f	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+btnSubmit	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnSubmit;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnSubmit	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.Button btnSubmit;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnSubmit	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        private System.Windows.Forms.Button btnSubmit;$/;"	f	class:RegimeDatabaseCalculatorSystem.ValueSelector	file:
+btnSubmit_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnSubmit_Click(object sender, EventArgs e) \/\/Submit New Record$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnSubmit_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void btnSubmit_Click(object sender, EventArgs e) \/\/ExistingPatient btnSubmit$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+btnSubmit_Click_1	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^        private void btnSubmit_Click_1(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+btnUpdate	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Button btnUpdate;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnUpdate_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void btnUpdate_Click(object sender, EventArgs e) \/\/ Updates Existing patient$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+btnUse4Calvert	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Button btnUse4Calvert;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+btneCCR_Click	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        private void btneCCR_Click(object sender, EventArgs e)  \/\/eCCR Frontend code-GUI interface$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+cBSA	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^    public class cBSA       \/\/BSA$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+cCCr	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^    public class cCCr       \/\/eCCR$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+cCalvert	.\RegimeDatabaseCalculatorSystem\Calculations.cs	/^    public class cCalvert   \/\/Calvert$/;"	c	namespace:RegimeDatabaseCalculatorSystem
+calDataUpdate	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.MonthCalendar calDataUpdate;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+calDataUpdate_DateSelected	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void calDataUpdate_DateSelected(object sender, DateRangeEventArgs e) \/\/ Shows reading for clicked day$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+calvertToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem calvertToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+calvertToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem calvertToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+calvertToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem calvertToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+cbActRegime	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ComboBox cbActRegime;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+cbAdmin1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbAdmin1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbAdmin2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbAdmin2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbAdmin3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbAdmin3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbAdmin4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbAdmin4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbCalcMethod1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbCalcMethod1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbCalcMethod2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbCalcMethod2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbCalcMethod3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbCalcMethod3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbCalcMethod4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.ComboBox cbCalcMethod4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+cbConsultant	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ComboBox cbConsultant;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+cbDoseSchedule	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ComboBox cbDoseSchedule;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+cbGender	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.CheckBox cbGender;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+cbGender	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ComboBox cbGender;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+cbNoOfTreatments	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ComboBox cbNoOfTreatments;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+clbValues	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        private System.Windows.Forms.CheckedListBox clbValues;$/;"	f	class:RegimeDatabaseCalculatorSystem.ValueSelector	file:
+components	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+components	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+components	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+components	.\RegimeDatabaseCalculatorSystem\Form2.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.Form2	file:
+components	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+components	.\RegimeDatabaseCalculatorSystem\REgimeEditor.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.REgimeEditor	file:
+components	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+components	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+components	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+components	.\RegimeDatabaseCalculatorSystem\SPCWebViewer.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.SPCviewer	file:
+components	.\RegimeDatabaseCalculatorSystem\ValueSelector.Designer.cs	/^        private System.ComponentModel.IContainer components = null;$/;"	f	class:RegimeDatabaseCalculatorSystem.ValueSelector	file:
+convertersToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem convertersToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+convertersToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem convertersToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+convertersToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem convertersToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+defaultInstance	.\RegimeDatabaseCalculatorSystem\Properties\Settings.Designer.cs	/^        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));$/;"	f	class:RegimeDatabaseCalculatorSystem.Properties.Settings	file:
+dtDOB	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.DateTimePicker dtDOB;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+dtLastDose	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.DateTimePicker dtLastDose;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+dtNextDose	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.DateTimePicker dtNextDose;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+fileToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+fileToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+fileToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+fullEditModeToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem fullEditModeToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+fullEditModeToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void fullEditModeToolStripMenuItem_Click(object sender, EventArgs e) \/\/Allows all fields to be edited$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+helpToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+helpToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+helpToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+index	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            public int index;$/;"	f	struct:RegimeDatabaseCalculatorSystem.Regime.PatientList
+lDaysPerCycle	.\RegimeDatabaseCalculatorSystem\AdminDays.cs	/^        public int lDaysPerCycle;$/;"	f	class:RegimeDatabaseCalculatorSystem.AdminDays
+label1	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label1;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.Label label1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+label10	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label10;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label10	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label10;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label11	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label11;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label12	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label12;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label13	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label13;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label14	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label14;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label15	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label15;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label16	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label16;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label17	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label17;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label2	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label2;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label2	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label2;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.Label label2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+label3	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label3;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label3	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label3;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label4	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label4;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label4	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label4;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label5	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label5;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label5	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label5;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label6	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label6;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label6	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label6;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label7	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label7;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label7	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label7;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label8	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label8;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label8	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label8;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+label9	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.Label label9;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+label9	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label label9;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lbDayCycle	.\RegimeDatabaseCalculatorSystem\AdminDays.Designer.cs	/^        private System.Windows.Forms.CheckedListBox lbDayCycle;$/;"	f	class:RegimeDatabaseCalculatorSystem.AdminDays	file:
+lbDiagnosis	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ListBox lbDiagnosis;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lbPrescriptions	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ListBox lbPrescriptions;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblCalcMethod1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblCalcMethod1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblCalcMethod2	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblCalcMethod2;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblCalcMethod3	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblCalcMethod3;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblCalcMethod4	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblCalcMethod4;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblDayOfRegime	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblDayOfRegime;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblDrgDose1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblDrgDose1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblDrgDose2	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblDrgDose2;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblDrgDose3	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblDrgDose3;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+lblDrgDose4	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.Label lblDrgDose4;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+listPatients	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ListBox listPatients;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+listPatients_DoubleClick	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void listPatients_DoubleClick(object sender, EventArgs e) \/\/ExistingPatient Doubleclick on list$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+listPatients_KeyPress	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void listPatients_KeyPress(object sender, KeyPressEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+listRegimes	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ListBox listRegimes;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+listRegimes	.\RegimeDatabaseCalculatorSystem\RegimeViewer.Designer.cs	/^        private System.Windows.Forms.ListBox listRegimes;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+listRegimes_SelectedIndexChanged	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void listRegimes_SelectedIndexChanged(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+listRegimes_SelectedIndexChanged	.\RegimeDatabaseCalculatorSystem\RegimeViewer.cs	/^        private void listRegimes_SelectedIndexChanged(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimeViewer	file:
+llblDrgName1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.LinkLabel llblDrgName1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName1_LinkClicked	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void llblDrgName1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName2	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.LinkLabel llblDrgName2;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName2_LinkClicked	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void llblDrgName2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName3	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.LinkLabel llblDrgName3;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName3_LinkClicked	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void llblDrgName3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName4	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.LinkLabel llblDrgName4;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+llblDrgName4_LinkClicked	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void llblDrgName4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+loadRegime	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void loadRegime(int RegNum)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+menuStrip1	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.MenuStrip menuStrip1;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+menuStrip1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.MenuStrip menuStrip1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+menuStrip1	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.MenuStrip menuStrip1;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+numAUC	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numAUC;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+numCurrentTreatment	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numCurrentTreatment;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+numDaysCycle	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numDaysCycle;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+numHeight	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numHeight;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+numIndex	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numIndex;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+numNoCycles	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numNoCycles;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+numSC	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numSC;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+numWeight	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.NumericUpDown numWeight;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+pIndex	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public int pIndex;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+pIsNew	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        public bool pIsNew;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor
+regimeEditorToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem regimeEditorToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+regimeEditorToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem regimeEditorToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+regimeEditorToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        private void regimeEditorToolStripMenuItem_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+regimeEditorToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void regimeEditorToolStripMenuItem_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+renalToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem renalToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+renalToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem renalToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+renalToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem renalToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+resourceCulture	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^        private static global::System.Globalization.CultureInfo resourceCulture;$/;"	f	class:RegimeDatabaseCalculatorSystem.Properties.Resources	file:
+resourceMan	.\RegimeDatabaseCalculatorSystem\Properties\Resources.Designer.cs	/^        private static global::System.Resources.ResourceManager resourceMan;$/;"	f	class:RegimeDatabaseCalculatorSystem.Properties.Resources	file:
+tBSA	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TabPage tBSA;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tCG	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TabPage tCG;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tCalvert	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TabPage tCalvert;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tabCalculators	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TabControl tabCalculators;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tabControl1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TabControl tabControl1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tabPageDosage	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TabPage tabPageDosage;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tabPageOverview	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TabPage tabPageOverview;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tabPatientData	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TabControl tabPatientData;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbAUC	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbAUC;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbAdminDays1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbAdminDays1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays1_Click	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void tbAdminDays1_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbAdminDays2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays2_Click	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void tbAdminDays2_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbAdminDays3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays3_Click	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void tbAdminDays3_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbAdminDays4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAdminDays4_Click	.\RegimeDatabaseCalculatorSystem\RegimesEditor.cs	/^        private void tbAdminDays4_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbAge	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbAge;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbAllergies	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbAllergies;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbBSA	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbBSA;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbBSA	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbBSA;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbCCr	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbCCr;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbCCr_TextChanged	.\RegimeDatabaseCalculatorSystem\Calculators.cs	/^        private void tbCCr_TextChanged(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbCa	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbCa;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbCalcDose1	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbCalcDose1;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbCalcDose2	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbCalcDose2;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbCalcDose3	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbCalcDose3;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbCalcDose4	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbCalcDose4;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbComment	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbComment;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDesc	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDesc;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDose	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbDose;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbDose1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDose1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDose2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDose2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDose3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDose3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDose4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDose4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDrugName1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDrugName1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDrugName2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDrugName2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDrugName3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDrugName3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbDrugName4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbDrugName4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbExtravasation	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbExtravasation;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbGFR	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbGFR;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbGFR	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbGFR;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbHeight	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbHeight;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbMass	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbMass;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbName	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbName;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbPatNum	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TextBox tbPatNum;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tbRegName	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbRegName;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbSC	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbSC;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tbSearchName	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.TextBox tbSearchName;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+tbSearchName_TextChanged_1	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^            private void tbSearchName_TextChanged_1(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:
+tbURL1	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbURL1;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbURL2	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbURL2;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbURL3	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbURL3;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbURL4	.\RegimeDatabaseCalculatorSystem\RegimesEditor.Designer.cs	/^        private System.Windows.Forms.TextBox tbURL4;$/;"	f	class:RegimeDatabaseCalculatorSystem.RegimesEditor	file:
+tbWeight	.\RegimeDatabaseCalculatorSystem\Calculators.Designer.cs	/^        private System.Windows.Forms.TextBox tbWeight;$/;"	f	class:RegimeDatabaseCalculatorSystem.Calculators	file:
+tpCalcInfo	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TabPage tpCalcInfo;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tpDiagnosis	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TabPage tpDiagnosis;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tpDose	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TabPage tpDose;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+tpSchedule	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.TabPage tpSchedule;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+userManualToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\PatientData.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem userManualToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+userManualToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Regime.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem userManualToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.Regime	file:
+userToolStripMenuItem	.\RegimeDatabaseCalculatorSystem\Form1.Designer.cs	/^        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;$/;"	f	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+userToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\Form1.cs	/^        private void userToolStripMenuItem_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.StartScreen	file:
+userToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\PatientData.cs	/^        private void userToolStripMenuItem_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.PatientData	file:
+userToolStripMenuItem_Click	.\RegimeDatabaseCalculatorSystem\Regime.cs	/^        private void userToolStripMenuItem_Click(object sender, EventArgs e)$/;"	m	class:RegimeDatabaseCalculatorSystem.Regime	file:

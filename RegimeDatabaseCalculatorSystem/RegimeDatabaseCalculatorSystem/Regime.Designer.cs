@@ -44,6 +44,7 @@
             this.renalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calvertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userManualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +141,7 @@
             this.regimeEditorToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R ) ) );
             this.regimeEditorToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.regimeEditorToolStripMenuItem.Text = "&Regime Editor";
+            this.regimeEditorToolStripMenuItem.Click += new System.EventHandler(this.regimeEditorToolStripMenuItem_Click);
             // 
             // convertersToolStripMenuItem
             // 
@@ -159,6 +161,7 @@
             this.bSAToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.bSAToolStripMenuItem.Text = "&BSA";
             this.bSAToolStripMenuItem.ToolTipText = "BSA using Dubois and Dubois Method";
+            this.bSAToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // renalToolStripMenuItem
             // 
@@ -168,6 +171,7 @@
             this.renalToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.renalToolStripMenuItem.Text = "&Cockcroft-Gault";
             this.renalToolStripMenuItem.ToolTipText = "Cockcroft-Gault Formula for Creatinine Clearance Rate";
+            this.renalToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // calvertToolStripMenuItem
             // 
@@ -175,12 +179,23 @@
             this.calvertToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A ) ) );
             this.calvertToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.calvertToolStripMenuItem.Text = "C&alvert";
+            this.calvertToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userManualToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // userManualToolStripMenuItem
+            // 
+            this.userManualToolStripMenuItem.Name = "userManualToolStripMenuItem";
+            this.userManualToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U ) ) );
+            this.userManualToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.userManualToolStripMenuItem.Text = "&User Manual";
+            this.userManualToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // Regime
             // 
@@ -223,5 +238,6 @@
         private System.Windows.Forms.ToolStripMenuItem renalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calvertToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userManualToolStripMenuItem;
     }
 }

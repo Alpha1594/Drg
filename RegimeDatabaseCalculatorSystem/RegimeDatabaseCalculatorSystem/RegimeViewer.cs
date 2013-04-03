@@ -41,13 +41,13 @@ namespace RegimeDatabaseCalculatorSystem
         public struct RegimeData
         {
             public string RegName;
-            public string Desc;
+            public string[] Desc;
             public string Extravasation;
-            public string Comments;
+            public string[] Comments;
             public List<Doses> RegimeDoses;
             public int NoOfCycles;
             public int DaysPerCycle;
-            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
+            public RegimeData(string RegName, string[] Desc, string Extravasation, string[] Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
             {
                 this.RegName = RegName;
                 this.Desc = Desc;

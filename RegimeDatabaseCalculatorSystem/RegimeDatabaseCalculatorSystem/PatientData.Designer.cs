@@ -42,26 +42,27 @@
             this.renalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calvertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userManualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPatientData = new System.Windows.Forms.TabControl();
             this.tpDiagnosis = new System.Windows.Forms.TabPage();
+            this.btnSelectRegime = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tbPrescriptions = new System.Windows.Forms.TextBox();
+            this.tbDiagnosis = new System.Windows.Forms.TextBox();
             this.cbActRegime = new System.Windows.Forms.ComboBox();
-            this.lbDiagnosis = new System.Windows.Forms.ListBox();
             this.tbAllergies = new System.Windows.Forms.TextBox();
-            this.lbPrescriptions = new System.Windows.Forms.ListBox();
             this.cbConsultant = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tpSchedule = new System.Windows.Forms.TabPage();
+            this.numNoOfTreatments = new System.Windows.Forms.NumericUpDown();
             this.lblDayOfRegime = new System.Windows.Forms.Label();
             this.numCurrentTreatment = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
-            this.cbNoOfTreatments = new System.Windows.Forms.ComboBox();
-            this.cbDoseSchedule = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dtNextDose = new System.Windows.Forms.DateTimePicker();
             this.dtLastDose = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.tpCalcInfo = new System.Windows.Forms.TabPage();
             this.tbCa = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -78,6 +79,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tpDose = new System.Windows.Forms.TabPage();
+            this.tbCalcDose4 = new System.Windows.Forms.TextBox();
+            this.lblCalcMethod4 = new System.Windows.Forms.Label();
+            this.lblDrgDose4 = new System.Windows.Forms.Label();
+            this.llblDrgName4 = new System.Windows.Forms.LinkLabel();
             this.llblDrgName3 = new System.Windows.Forms.LinkLabel();
             this.llblDrgName2 = new System.Windows.Forms.LinkLabel();
             this.llblDrgName1 = new System.Windows.Forms.LinkLabel();
@@ -101,14 +106,11 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dtDOB = new System.Windows.Forms.DateTimePicker();
-            this.llblDrgName4 = new System.Windows.Forms.LinkLabel();
-            this.lblDrgDose4 = new System.Windows.Forms.Label();
-            this.lblCalcMethod4 = new System.Windows.Forms.Label();
-            this.tbCalcDose4 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabPatientData.SuspendLayout();
             this.tpDiagnosis.SuspendLayout();
             this.tpSchedule.SuspendLayout();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numNoOfTreatments ) ).BeginInit();
             ( (System.ComponentModel.ISupportInitialize) ( this.numCurrentTreatment ) ).BeginInit();
             this.tpCalcInfo.SuspendLayout();
             ( (System.ComponentModel.ISupportInitialize) ( this.numAUC ) ).BeginInit();
@@ -160,9 +162,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(3, 91);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 13);
+            this.label11.Size = new System.Drawing.Size(104, 13);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Current Presriptions";
+            this.label11.Text = "Current Prescriptions";
             // 
             // menuStrip1
             // 
@@ -212,7 +214,7 @@
             this.bSAToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.bSAToolStripMenuItem.Text = "&BSA";
             this.bSAToolStripMenuItem.ToolTipText = "BSA using Dubois and Dubois Method";
-            this.bSAToolStripMenuItem.Click += new System.EventHandler(this.bSAToolStripMenuItem_Click);
+            this.bSAToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // renalToolStripMenuItem
             // 
@@ -222,7 +224,7 @@
             this.renalToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.renalToolStripMenuItem.Text = "&Cockcroft-Gault";
             this.renalToolStripMenuItem.ToolTipText = "Cockcroft-Gault Formula for Creatinine Clearance Rate";
-            this.renalToolStripMenuItem.Click += new System.EventHandler(this.renalToolStripMenuItem_Click);
+            this.renalToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // calvertToolStripMenuItem
             // 
@@ -230,13 +232,23 @@
             this.calvertToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A ) ) );
             this.calvertToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.calvertToolStripMenuItem.Text = "C&alvert";
-            this.calvertToolStripMenuItem.Click += new System.EventHandler(this.calvertToolStripMenuItem_Click);
+            this.calvertToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userManualToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // userManualToolStripMenuItem
+            // 
+            this.userManualToolStripMenuItem.Name = "userManualToolStripMenuItem";
+            this.userManualToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U ) ) );
+            this.userManualToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.userManualToolStripMenuItem.Text = "&User Manual";
+            this.userManualToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // tabPatientData
             // 
@@ -253,10 +265,12 @@
             // 
             // tpDiagnosis
             // 
+            this.tpDiagnosis.Controls.Add(this.btnSelectRegime);
+            this.tpDiagnosis.Controls.Add(this.label14);
+            this.tpDiagnosis.Controls.Add(this.tbPrescriptions);
+            this.tpDiagnosis.Controls.Add(this.tbDiagnosis);
             this.tpDiagnosis.Controls.Add(this.cbActRegime);
-            this.tpDiagnosis.Controls.Add(this.lbDiagnosis);
             this.tpDiagnosis.Controls.Add(this.tbAllergies);
-            this.tpDiagnosis.Controls.Add(this.lbPrescriptions);
             this.tpDiagnosis.Controls.Add(this.cbConsultant);
             this.tpDiagnosis.Controls.Add(this.label5);
             this.tpDiagnosis.Controls.Add(this.label10);
@@ -270,6 +284,41 @@
             this.tpDiagnosis.Text = "Daignosis & Treatment";
             this.tpDiagnosis.UseVisualStyleBackColor = true;
             // 
+            // btnSelectRegime
+            // 
+            this.btnSelectRegime.Location = new System.Drawing.Point(233, 225);
+            this.btnSelectRegime.Name = "btnSelectRegime";
+            this.btnSelectRegime.Size = new System.Drawing.Size(65, 37);
+            this.btnSelectRegime.TabIndex = 10;
+            this.btnSelectRegime.Text = "Choose Regime";
+            this.btnSelectRegime.UseVisualStyleBackColor = true;
+            this.btnSelectRegime.Click += new System.EventHandler(this.btnSelectRegime_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(8, 230);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Regime";
+            // 
+            // tbPrescriptions
+            // 
+            this.tbPrescriptions.Location = new System.Drawing.Point(106, 91);
+            this.tbPrescriptions.Multiline = true;
+            this.tbPrescriptions.Name = "tbPrescriptions";
+            this.tbPrescriptions.Size = new System.Drawing.Size(182, 117);
+            this.tbPrescriptions.TabIndex = 8;
+            // 
+            // tbDiagnosis
+            // 
+            this.tbDiagnosis.Location = new System.Drawing.Point(53, 6);
+            this.tbDiagnosis.Multiline = true;
+            this.tbDiagnosis.Name = "tbDiagnosis";
+            this.tbDiagnosis.Size = new System.Drawing.Size(122, 56);
+            this.tbDiagnosis.TabIndex = 7;
+            // 
             // cbActRegime
             // 
             this.cbActRegime.FormattingEnabled = true;
@@ -278,28 +327,12 @@
             this.cbActRegime.Size = new System.Drawing.Size(121, 21);
             this.cbActRegime.TabIndex = 6;
             // 
-            // lbDiagnosis
-            // 
-            this.lbDiagnosis.FormattingEnabled = true;
-            this.lbDiagnosis.Location = new System.Drawing.Point(55, 6);
-            this.lbDiagnosis.Name = "lbDiagnosis";
-            this.lbDiagnosis.Size = new System.Drawing.Size(120, 56);
-            this.lbDiagnosis.TabIndex = 2;
-            // 
             // tbAllergies
             // 
             this.tbAllergies.Location = new System.Drawing.Point(72, 68);
             this.tbAllergies.Name = "tbAllergies";
             this.tbAllergies.Size = new System.Drawing.Size(218, 20);
             this.tbAllergies.TabIndex = 4;
-            // 
-            // lbPrescriptions
-            // 
-            this.lbPrescriptions.FormattingEnabled = true;
-            this.lbPrescriptions.Location = new System.Drawing.Point(99, 91);
-            this.lbPrescriptions.Name = "lbPrescriptions";
-            this.lbPrescriptions.Size = new System.Drawing.Size(191, 95);
-            this.lbPrescriptions.TabIndex = 5;
             // 
             // cbConsultant
             // 
@@ -324,17 +357,15 @@
             // 
             // tpSchedule
             // 
+            this.tpSchedule.Controls.Add(this.numNoOfTreatments);
             this.tpSchedule.Controls.Add(this.lblDayOfRegime);
             this.tpSchedule.Controls.Add(this.numCurrentTreatment);
             this.tpSchedule.Controls.Add(this.label16);
-            this.tpSchedule.Controls.Add(this.cbNoOfTreatments);
-            this.tpSchedule.Controls.Add(this.cbDoseSchedule);
             this.tpSchedule.Controls.Add(this.label15);
             this.tpSchedule.Controls.Add(this.dtNextDose);
             this.tpSchedule.Controls.Add(this.dtLastDose);
             this.tpSchedule.Controls.Add(this.label12);
             this.tpSchedule.Controls.Add(this.label13);
-            this.tpSchedule.Controls.Add(this.label14);
             this.tpSchedule.Location = new System.Drawing.Point(4, 22);
             this.tpSchedule.Name = "tpSchedule";
             this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
@@ -343,10 +374,28 @@
             this.tpSchedule.Text = "Schedule";
             this.tpSchedule.UseVisualStyleBackColor = true;
             // 
+            // numNoOfTreatments
+            // 
+            this.numNoOfTreatments.Location = new System.Drawing.Point(236, 58);
+            this.numNoOfTreatments.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.numNoOfTreatments.Name = "numNoOfTreatments";
+            this.numNoOfTreatments.Size = new System.Drawing.Size(49, 20);
+            this.numNoOfTreatments.TabIndex = 27;
+            this.numNoOfTreatments.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numNoOfTreatments.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            // 
             // lblDayOfRegime
             // 
             this.lblDayOfRegime.AutoSize = true;
-            this.lblDayOfRegime.Location = new System.Drawing.Point(4, 111);
+            this.lblDayOfRegime.Location = new System.Drawing.Point(98, 60);
             this.lblDayOfRegime.Name = "lblDayOfRegime";
             this.lblDayOfRegime.Size = new System.Drawing.Size(83, 13);
             this.lblDayOfRegime.TabIndex = 26;
@@ -354,42 +403,36 @@
             // 
             // numCurrentTreatment
             // 
-            this.numCurrentTreatment.Location = new System.Drawing.Point(166, 85);
+            this.numCurrentTreatment.Location = new System.Drawing.Point(159, 58);
+            this.numCurrentTreatment.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             this.numCurrentTreatment.Name = "numCurrentTreatment";
             this.numCurrentTreatment.Size = new System.Drawing.Size(49, 20);
             this.numCurrentTreatment.TabIndex = 9;
             this.numCurrentTreatment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numCurrentTreatment.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( (byte) ( 0 ) ));
-            this.label16.Location = new System.Drawing.Point(219, 83);
+            this.label16.Location = new System.Drawing.Point(214, 52);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(16, 24);
             this.label16.TabIndex = 25;
             this.label16.Text = "/";
             // 
-            // cbNoOfTreatments
-            // 
-            this.cbNoOfTreatments.FormattingEnabled = true;
-            this.cbNoOfTreatments.Location = new System.Drawing.Point(238, 84);
-            this.cbNoOfTreatments.Name = "cbNoOfTreatments";
-            this.cbNoOfTreatments.Size = new System.Drawing.Size(49, 21);
-            this.cbNoOfTreatments.TabIndex = 10;
-            // 
-            // cbDoseSchedule
-            // 
-            this.cbDoseSchedule.FormattingEnabled = true;
-            this.cbDoseSchedule.Location = new System.Drawing.Point(166, 58);
-            this.cbDoseSchedule.Name = "cbDoseSchedule";
-            this.cbDoseSchedule.Size = new System.Drawing.Size(121, 21);
-            this.cbDoseSchedule.TabIndex = 8;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 87);
+            this.label15.Location = new System.Drawing.Point(4, 60);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 13);
             this.label15.TabIndex = 21;
@@ -426,15 +469,6 @@
             this.label13.Size = new System.Drawing.Size(57, 13);
             this.label13.TabIndex = 17;
             this.label13.Text = "Next Dose";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(4, 61);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 13);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Dose Schedule";
             // 
             // tpCalcInfo
             // 
@@ -524,6 +558,7 @@
             this.numIndex.Name = "numIndex";
             this.numIndex.Size = new System.Drawing.Size(39, 20);
             this.numIndex.TabIndex = 22;
+            this.numIndex.Visible = false;
             // 
             // numSC
             // 
@@ -628,6 +663,43 @@
             this.tpDose.TabIndex = 3;
             this.tpDose.Text = "Doses";
             this.tpDose.UseVisualStyleBackColor = true;
+            // 
+            // tbCalcDose4
+            // 
+            this.tbCalcDose4.Location = new System.Drawing.Point(116, 190);
+            this.tbCalcDose4.Name = "tbCalcDose4";
+            this.tbCalcDose4.Size = new System.Drawing.Size(100, 20);
+            this.tbCalcDose4.TabIndex = 18;
+            this.tbCalcDose4.Text = "tbCalcDose4";
+            // 
+            // lblCalcMethod4
+            // 
+            this.lblCalcMethod4.AutoSize = true;
+            this.lblCalcMethod4.Location = new System.Drawing.Point(3, 210);
+            this.lblCalcMethod4.Name = "lblCalcMethod4";
+            this.lblCalcMethod4.Size = new System.Drawing.Size(80, 13);
+            this.lblCalcMethod4.TabIndex = 17;
+            this.lblCalcMethod4.Text = "lblCalcMethod4";
+            // 
+            // lblDrgDose4
+            // 
+            this.lblDrgDose4.AutoSize = true;
+            this.lblDrgDose4.Location = new System.Drawing.Point(3, 197);
+            this.lblDrgDose4.Name = "lblDrgDose4";
+            this.lblDrgDose4.Size = new System.Drawing.Size(65, 13);
+            this.lblDrgDose4.TabIndex = 16;
+            this.lblDrgDose4.Text = "lblDrgDose4";
+            // 
+            // llblDrgName4
+            // 
+            this.llblDrgName4.AutoSize = true;
+            this.llblDrgName4.Location = new System.Drawing.Point(3, 175);
+            this.llblDrgName4.Name = "llblDrgName4";
+            this.llblDrgName4.Size = new System.Drawing.Size(70, 13);
+            this.llblDrgName4.TabIndex = 15;
+            this.llblDrgName4.TabStop = true;
+            this.llblDrgName4.Text = "llblDrgName4";
+            this.llblDrgName4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblDrgName4_LinkClicked);
             // 
             // llblDrgName3
             // 
@@ -841,42 +913,6 @@
             this.dtDOB.Size = new System.Drawing.Size(134, 20);
             this.dtDOB.TabIndex = 22;
             // 
-            // llblDrgName4
-            // 
-            this.llblDrgName4.AutoSize = true;
-            this.llblDrgName4.Location = new System.Drawing.Point(3, 175);
-            this.llblDrgName4.Name = "llblDrgName4";
-            this.llblDrgName4.Size = new System.Drawing.Size(70, 13);
-            this.llblDrgName4.TabIndex = 15;
-            this.llblDrgName4.TabStop = true;
-            this.llblDrgName4.Text = "llblDrgName4";
-            // 
-            // lblDrgDose4
-            // 
-            this.lblDrgDose4.AutoSize = true;
-            this.lblDrgDose4.Location = new System.Drawing.Point(3, 197);
-            this.lblDrgDose4.Name = "lblDrgDose4";
-            this.lblDrgDose4.Size = new System.Drawing.Size(65, 13);
-            this.lblDrgDose4.TabIndex = 16;
-            this.lblDrgDose4.Text = "lblDrgDose4";
-            // 
-            // lblCalcMethod4
-            // 
-            this.lblCalcMethod4.AutoSize = true;
-            this.lblCalcMethod4.Location = new System.Drawing.Point(3, 210);
-            this.lblCalcMethod4.Name = "lblCalcMethod4";
-            this.lblCalcMethod4.Size = new System.Drawing.Size(80, 13);
-            this.lblCalcMethod4.TabIndex = 17;
-            this.lblCalcMethod4.Text = "lblCalcMethod4";
-            // 
-            // tbCalcDose4
-            // 
-            this.tbCalcDose4.Location = new System.Drawing.Point(116, 190);
-            this.tbCalcDose4.Name = "tbCalcDose4";
-            this.tbCalcDose4.Size = new System.Drawing.Size(100, 20);
-            this.tbCalcDose4.TabIndex = 18;
-            this.tbCalcDose4.Text = "tbCalcDose4";
-            // 
             // PatientData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -909,6 +945,7 @@
             this.tpDiagnosis.PerformLayout();
             this.tpSchedule.ResumeLayout(false);
             this.tpSchedule.PerformLayout();
+            ( (System.ComponentModel.ISupportInitialize) ( this.numNoOfTreatments ) ).EndInit();
             ( (System.ComponentModel.ISupportInitialize) ( this.numCurrentTreatment ) ).EndInit();
             this.tpCalcInfo.ResumeLayout(false);
             this.tpCalcInfo.PerformLayout();
@@ -949,7 +986,6 @@
         private System.Windows.Forms.DateTimePicker dtLastDose;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tpCalcInfo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
@@ -957,18 +993,14 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbNoOfTreatments;
-        private System.Windows.Forms.ComboBox cbDoseSchedule;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numCurrentTreatment;
         private System.Windows.Forms.NumericUpDown numSC;
         private System.Windows.Forms.NumericUpDown numWeight;
         private System.Windows.Forms.NumericUpDown numHeight;
         private System.Windows.Forms.TextBox tbAllergies;
-        private System.Windows.Forms.ListBox lbPrescriptions;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.ListBox lbDiagnosis;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnNextEnableCheck;
         private System.Windows.Forms.Button btnUpdate;
@@ -1002,5 +1034,11 @@
         private System.Windows.Forms.Label lblCalcMethod4;
         private System.Windows.Forms.Label lblDrgDose4;
         private System.Windows.Forms.LinkLabel llblDrgName4;
+        private System.Windows.Forms.ToolStripMenuItem userManualToolStripMenuItem;
+        private System.Windows.Forms.TextBox tbPrescriptions;
+        private System.Windows.Forms.TextBox tbDiagnosis;
+        private System.Windows.Forms.Button btnSelectRegime;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.NumericUpDown numNoOfTreatments;
     }
 }

@@ -5,7 +5,6 @@ C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.Properties.Resources.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.Regime.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.RegimesEditor.resources
-C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.RegimeViewer.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.SPCviewer.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\RegimeDatabaseCalculatorSystem.ValueSelector.resources
 C:\Users\A.2\Documents\My Dropbox\Col\Comp\DrgPro\RegimeDatabaseCalculatorSystem\RegimeDatabaseCalculatorSystem\obj\x86\Release\GenerateResource.read.1.tlog

@@ -29,22 +29,23 @@ namespace RegimeDatabaseCalculatorSystem
         }
 
         #region Menu Objects
-        private void bSAToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CalMenu_Click(object sender, EventArgs e)
         {
-            Calculators calcBSA = new Calculators(0);		// BSA
-            calcBSA.Show();
-        }
-
-        private void renalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Calculators calcCCR = new Calculators(1);		// eCCR
-            calcCCR.Show();
-        }
-
-        private void calvertToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Calculators calcCalvert = new Calculators(2);	// Calvert
-            calcCalvert.Show();
+            switch ( sender.ToString() )
+            {
+                case "&BSA":
+                    Calculators calcBSA = new Calculators(0);
+                    calcBSA.Show();
+                    break;
+                case "&Cockcroft-Gault":
+                    Calculators calcCCR = new Calculators(1);
+                    calcCCR.Show();
+                    break;
+                case "C&alvert":
+                    Calculators calcCalvert = new Calculators(2);
+                    calcCalvert.Show();
+                    break;
+            }
         }
 
         private void regimeEditorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,11 +53,12 @@ namespace RegimeDatabaseCalculatorSystem
             RegimeViewer RV = new RegimeViewer();
             RV.Show();
         }
-        #endregion
+        
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(@"User.pdf");
         }
+        #endregion
     }
 }

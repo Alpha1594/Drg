@@ -1,153 +1,55 @@
 <?xml version="1.0"?>
 <ArrayOfRegimeData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <RegimeData>
-    <RegName>asdf</RegName>
-    <Desc>Amos ammas ammat lol</Desc>
-    <Extravasation>tbExtravasation</Extravasation>
-    <Comments>tbComment</Comments>
-    <RegimeDoses />
-    <NoOfCycles>0</NoOfCycles>
-    <DaysPerCycle>0</DaysPerCycle>
-  </RegimeData>
-  <RegimeData>
-    <RegName>LETS GET HIGH</RegName>
-    <Desc>Narcotics</Desc>
-    <Extravasation>tbExtravasation</Extravasation>
-    <Comments>coma coma chamelon</Comments>
-    <RegimeDoses>
-      <Doses>
-        <DrgName>COCAiNE</DrgName>
-        <DrgDose>5.5</DrgDose>
-        <CalcMethod>AUC</CalcMethod>
-        <DrgAdmin>Or</DrgAdmin>
-        <Path>fgakga</Path>
-        <AdministrationDays />
-      </Doses>
-      <Doses>
-        <DrgName>SPEED</DrgName>
-        <DrgDose>42</DrgDose>
-        <CalcMethod>mg/m²</CalcMethod>
-        <DrgAdmin>Ven</DrgAdmin>
-        <Path>fgshkgfasdhakj</Path>
-        <AdministrationDays />
-      </Doses>
-    </RegimeDoses>
-    <NoOfCycles>0</NoOfCycles>
-    <DaysPerCycle>0</DaysPerCycle>
-  </RegimeData>
-  <RegimeData>
     <RegName>FEC</RegName>
-    <Desc>fgsagsgrae</Desc>
-    <Extravasation>asdjfasjkljgklja</Extravasation>
-    <Comments>fdagraehtase :-)</Comments>
+    <Desc>
+      <string>For adjuvant use in breast cancer</string>
+      <string>Administration: Epirubicin administered via fast-running infusion of 0.9% Sodium Chloride.</string>
+      <string>5 Fluorouracil and Cyclophosphamide may be administered as bolus injections or via fast running infusion of 0.9% Sodium Chloride.</string>
+      <string />
+      <string>Main Toxicities: myelosuppression; alopecia; diarrhoea; mucositis; cardiomyopathy; haemorrhagic cystitis; ovarian failure/infertility.</string>
+      <string>Anti-emetics: highly emetogenic</string>
+    </Desc>
+    <Extravasation>Epirubicin is a vesicant</Extravasation>
+    <Comments>
+      <string>Maximum cumulative dose of Epirubicin = 950mg/m2</string>
+      <string>A baseline MUGA scan should be performed where the patient is considered at risk of having impaired cardiac function e.g. significant cardiac history, hypertension, obese, smoker, elderly, previous exposure to anthracyclines, previous thoracic radiotherapy.</string>
+      <string>MUGA scan should be repeated if there is suspicion of cardiac toxicity at any point during treatment, or if cumulative anthracycline dose approaches maximum.</string>
+      <string>Offer Scalp Cooling.</string>
+    </Comments>
     <RegimeDoses>
       <Doses>
-        <DrgName>Florouerocil</DrgName>
-        <DrgDose>69</DrgDose>
-        <CalcMethod>AUC</CalcMethod>
-        <DrgAdmin>Or</DrgAdmin>
-        <Path>F.html</Path>
-        <AdministrationDays />
+        <DrgName>5 Fluorouracil</DrgName>
+        <DrgDose>600</DrgDose>
+        <CalcMethod>mg /m²</CalcMethod>
+        <DrgAdmin>IV</DrgAdmin>
+        <Path>URL</Path>
+        <AdministrationDays>
+          <int>1</int>
+        </AdministrationDays>
       </Doses>
       <Doses>
         <DrgName>Epirubicin</DrgName>
-        <DrgDose>45</DrgDose>
+        <DrgDose>75</DrgDose>
         <CalcMethod>mg/m²</CalcMethod>
-        <DrgAdmin>Su</DrgAdmin>
-        <Path>E.php</Path>
-        <AdministrationDays />
+        <DrgAdmin>IV</DrgAdmin>
+        <Path>URL</Path>
+        <AdministrationDays>
+          <int>1</int>
+        </AdministrationDays>
       </Doses>
       <Doses>
         <DrgName>Cyclophosphamide</DrgName>
-        <DrgDose>77</DrgDose>
-        <CalcMethod>AUC</CalcMethod>
-        <DrgAdmin>IV</DrgAdmin>
-        <Path>C.html</Path>
-        <AdministrationDays />
-      </Doses>
-    </RegimeDoses>
-    <NoOfCycles>0</NoOfCycles>
-    <DaysPerCycle>12</DaysPerCycle>
-  </RegimeData>
-  <RegimeData>
-    <RegName>TheDopeShow</RegName>
-    <Desc>Amos ammas ammat lol</Desc>
-    <Extravasation>tbExtravasation</Extravasation>
-    <Comments>tbComment</Comments>
-    <RegimeDoses>
-      <Doses>
-        <DrgName>F</DrgName>
-        <DrgDose>2.2</DrgDose>
-        <CalcMethod>mg /m²</CalcMethod>
-        <DrgAdmin>Or</DrgAdmin>
-        <Path>Floro</Path>
-        <AdministrationDays>
-          <int>1</int>
-          <int>2</int>
-          <int>4</int>
-          <int>8</int>
-        </AdministrationDays>
-      </Doses>
-      <Doses>
-        <DrgName>E</DrgName>
-        <DrgDose>72</DrgDose>
-        <CalcMethod>AUC</CalcMethod>
-        <DrgAdmin>IV</DrgAdmin>
-        <Path>Epi</Path>
-        <AdministrationDays />
-      </Doses>
-    </RegimeDoses>
-    <NoOfCycles>0</NoOfCycles>
-    <DaysPerCycle>9</DaysPerCycle>
-  </RegimeData>
-  <RegimeData>
-    <RegName>Fubar</RegName>
-    <Desc>Amos ammas ammat lol</Desc>
-    <Extravasation>tbExtravasation</Extravasation>
-    <Comments>tbComment</Comments>
-    <RegimeDoses>
-      <Doses>
-        <DrgName>Will this work</DrgName>
-        <DrgDose>5</DrgDose>
-        <CalcMethod>mg /m²</CalcMethod>
-        <DrgAdmin>Or</DrgAdmin>
-        <Path>q.org</Path>
-        <AdministrationDays>
-          <int>1</int>
-          <int>3</int>
-          <int>5</int>
-          <int>7</int>
-          <int>9</int>
-        </AdministrationDays>
-      </Doses>
-      <Doses>
-        <DrgName>No</DrgName>
-        <DrgDose>42</DrgDose>
-        <CalcMethod>AUC</CalcMethod>
-        <DrgAdmin>An</DrgAdmin>
-        <Path>No.ans</Path>
-        <AdministrationDays>
-          <int>2</int>
-          <int>4</int>
-          <int>6</int>
-          <int>8</int>
-        </AdministrationDays>
-      </Doses>
-      <Doses>
-        <DrgName>No a'm not falling ofr this</DrgName>
-        <DrgDose>69</DrgDose>
+        <DrgDose>600</DrgDose>
         <CalcMethod>mg/m²</CalcMethod>
-        <DrgAdmin>Va</DrgAdmin>
-        <Path>lol.co.uk</Path>
+        <DrgAdmin>IV</DrgAdmin>
+        <Path>URL</Path>
         <AdministrationDays>
-          <int>2</int>
-          <int>4</int>
-          <int>6</int>
-          <int>8</int>
+          <int>1</int>
         </AdministrationDays>
       </Doses>
     </RegimeDoses>
-    <NoOfCycles>3</NoOfCycles>
-    <DaysPerCycle>10</DaysPerCycle>
+    <NoOfCycles>6</NoOfCycles>
+    <DaysPerCycle>21</DaysPerCycle>
   </RegimeData>
 </ArrayOfRegimeData>

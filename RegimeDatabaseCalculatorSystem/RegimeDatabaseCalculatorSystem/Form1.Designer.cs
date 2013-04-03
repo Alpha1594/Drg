@@ -37,9 +37,9 @@
             this.renalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calvertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRegCall = new System.Windows.Forms.Button();
             this.btnCalcCall = new System.Windows.Forms.Button();
-            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +89,7 @@
             this.bSAToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.bSAToolStripMenuItem.Text = "&BSA";
             this.bSAToolStripMenuItem.ToolTipText = "BSA using Dubois and Dubois Method";
-            this.bSAToolStripMenuItem.Click += new System.EventHandler(this.bSAToolStripMenuItem_Click);
+            this.bSAToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // renalToolStripMenuItem
             // 
@@ -99,7 +99,7 @@
             this.renalToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.renalToolStripMenuItem.Text = "&Cockcroft-Gault";
             this.renalToolStripMenuItem.ToolTipText = "Cockcroft-Gault Formula for Creatinine Clearance Rate";
-            this.renalToolStripMenuItem.Click += new System.EventHandler(this.renalToolStripMenuItem_Click);
+            this.renalToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // calvertToolStripMenuItem
             // 
@@ -107,7 +107,7 @@
             this.calvertToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A ) ) );
             this.calvertToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.calvertToolStripMenuItem.Text = "C&alvert";
-            this.calvertToolStripMenuItem.Click += new System.EventHandler(this.calvertToolStripMenuItem_Click);
+            this.calvertToolStripMenuItem.Click += new System.EventHandler(this.CalMenu_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -116,6 +116,14 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // userToolStripMenuItem
+            // 
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U ) ) );
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.userToolStripMenuItem.Text = "&User Manual";
+            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // btnRegCall
             // 
@@ -138,14 +146,6 @@
             this.btnCalcCall.Text = "&Calculators";
             this.btnCalcCall.UseVisualStyleBackColor = true;
             this.btnCalcCall.Click += new System.EventHandler(this.btnCalcCall_Click);
-            // 
-            // userToolStripMenuItem
-            // 
-            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.ShortcutKeys = ( (System.Windows.Forms.Keys) ( ( System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U ) ) );
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.userToolStripMenuItem.Text = "&User Manual";
-            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // StartScreen
             // 

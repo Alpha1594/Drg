@@ -41,43 +41,36 @@ namespace RegimeDatabaseCalculatorSystem
             public string Name;
             public string PatientNumber;
             public string Consultant;
-            //public List<string> Diagnosis;
+            public string[] Diagnosis;
             public string Allergies;
             public string ActRegime;
-            //public List<string> Prescription;
+            public string[] Prescription;
             public DateTime DOB;
             public DateTime LastDose;
             public DateTime NextDose;
-            public byte DoseSchedule;
             public byte CurrentTreatment;
             public byte NoOfTreatments;
             public string Gender;
             public List<MedicalValues> MedVals;
-            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string Allergies, string ActRegime, DateTime DOB, DateTime LastDose, DateTime NextDose, byte DoseSchedule, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)
-            //List<string> Diagnosis,  List<string> Prescription,
+            public PatientDataRecords(string Name, string PatientNumber, string Consultant, string[] Diagnosis, string Allergies, string ActRegime, string[] Prescription, DateTime DOB, DateTime LastDose, DateTime NextDose, byte CurrentTreatment, byte NoOfTreatments, string Gender, MedicalValues LatestMedVal)
+            //,  List<
             {
                 List<MedicalValues> Placebo = new List<MedicalValues>(); //Creates MedValList
                 Placebo.Add(LatestMedVal); //Takes LatestMedVal adds it to list
                 this.Name = Name;
                 this.PatientNumber = PatientNumber;
                 this.Consultant = Consultant;
-                //this.Diagnosis = Diagnosis;
+                this.Diagnosis = Diagnosis;
                 this.Allergies = Allergies;
                 this.ActRegime = ActRegime;
-                //this.Prescription = Prescription;
+                this.Prescription = Prescription;
                 this.DOB = DOB;
                 this.LastDose = LastDose;
                 this.NextDose = NextDose;
-                this.DoseSchedule = DoseSchedule;
                 this.CurrentTreatment = CurrentTreatment;
                 this.NoOfTreatments = NoOfTreatments;
                 this.Gender = Gender;
-                //this.MedVal.LastUpdate = LastUpdate;
                 this.MedVals = Placebo;     //Using above to to add data sans tantrum
-                //this.MedVals.Insert(0,LatestMedVal);
-                //this.MedVal.Height = Height;
-                //this.MedVal.Weight = Weight;
-                //this.MedVal.SCreatinine = SCreatinine;
             }
         }
         public static List<PatientDataRecords> Patients = new List<PatientDataRecords>();//List of all patients
@@ -137,13 +130,13 @@ namespace RegimeDatabaseCalculatorSystem
         public struct RegimeData
         {
             public string RegName;
-            public string Desc;
+            public string[] Desc;
             public string Extravasation;
-            public string Comments;
+            public string[] Comments;
             public List<Doses> RegimeDoses;
             public int NoOfCycles;
             public int DaysPerCycle;
-            public RegimeData(string RegName, string Desc, string Extravasation, string Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
+            public RegimeData(string RegName, string[] Desc, string Extravasation, string[] Comments, List<Doses> LatestDose, int NoOfCycles, int DaysPerCycle)// 
             {
                 this.RegName = RegName;
                 this.Desc = Desc;
@@ -328,7 +321,40 @@ namespace RegimeDatabaseCalculatorSystem
         private void btnReset_Click(object sender, EventArgs e)
         {
             listRegimes.SelectedIndex = -1;
+            tbSearchName.Clear();
         }
 
+        #region Menus
+        // Menu bar event handlers
+        private void CalMenu_Click(object sender, EventArgs e)
+        {
+            switch ( sender.ToString() )
+            {
+                case "&BSA":
+                    Calculators calcBSA = new Calculators(0);
+                    calcBSA.Show();
+                    break;
+                case "&Cockcroft-Gault":
+                    Calculators calcCCR = new Calculators(1);
+                    calcCCR.Show();
+                    break;
+                case "C&alvert":
+                    Calculators calcCalvert = new Calculators(2);
+                    calcCalvert.Show();
+                    break;
+            }
+        }
+
+        private void regimeEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegimeViewer RV = new RegimeViewer();
+            RV.Show();
+        }
+
+        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"User.pdf");
+        }
+        #endregion
     }
 }
